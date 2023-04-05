@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const apiClient = axios.create({
-    baseURL: 'https://localhost:7021',
+    baseURL: 'https://localhost:7181',
     withCredentials: false,
     headers: {
         'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export const userService = {
         return user;
     },
     async postUser(newUserRequestModel){
-        let response = await apiClient.post("/User/InsertUser", newUserRequestModel)
+        let response = await apiClient.post("/User/PostUser", newUserRequestModel)
         if (response.status === 200) 
         {   
             Swal.fire({ 

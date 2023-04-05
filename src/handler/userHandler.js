@@ -5,9 +5,7 @@ export const userHandler = {
         if (!newUser) {
             return;
         }
-        let imgStringData = newUser.img;
-        let imgStringDataSplit = imgStringData.split(',');
-        let imgContent = imgStringDataSplit[1];
+       
 
         let newUserRequestModel = {
                 "userData": {
@@ -15,12 +13,7 @@ export const userHandler = {
                     "lastName":newUser.lastName,
                     "email": newUser.email,
                     "password": newUser.password,
-                },
-                "fileData": {
-                "fileName": newUser.fullName + "-Photo",
-                "base64FileContent": imgContent
-                }   
-           
+                }  
         }
 
         return userService.postUser(newUserRequestModel);
