@@ -1,13 +1,11 @@
 import './App.css'
+import Register from './pages/Register'
+
 
 function App() {
 
   return (
-    <div className="App">
-      <p className="read-the-docs">
-        Hello world
-      </p>
-    </div>
+    <Register/> 
   )
 }
 
