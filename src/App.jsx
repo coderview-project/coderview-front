@@ -1,14 +1,12 @@
-
+import Login from './components/Login'
 import './App.css'
 
 function App() {
 
   return (
     <div className="App">
+     <Login/>
      
-      <p className="read-the-docs">
-        Hello world
-      </p>
     </div>
   )
 }
