@@ -1,4 +1,5 @@
-
+import React from 'react'
+import Login from './components/Login'
 import './App.css'
 
 function App() {
@@ -6,9 +7,7 @@ function App() {
   return (
     <div className="App">
      
-      <p className="read-the-docs">
-        Hello world
-      </p>
+     <Login/>
     </div>
   )
 }
