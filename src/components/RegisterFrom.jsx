@@ -1,5 +1,4 @@
 import * as React from 'react';
-import TextField from '@mui/material/TextField';
 import {useState} from 'react';
 
 
@@ -39,7 +38,7 @@ function RegisterForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
         let newUser = { firstName, lastName, email, password, confirmPassword };
-        userHandler.addUser(newUser);
+        userHandler.postUser(newUser);
         event.target.reset()
       };
 

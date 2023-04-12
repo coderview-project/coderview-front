@@ -43,7 +43,7 @@ export const userService = {
             showClass: { popup: 'animate__animated animate__fadeInDown' }, 
             hideClass: { popup: 'animate__animated animate__fadeOutUp' } })   
          } else { 
-            alert("Upsi...");
+            alert("Algo salió mal...");
          }
 
     },

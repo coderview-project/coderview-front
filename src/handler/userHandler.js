@@ -5,7 +5,6 @@ export const userHandler = {
         if (!newUser) {
             return;
         }
-       
 
         let newUserRequestModel = {
                 "userData": {
@@ -13,6 +12,7 @@ export const userHandler = {
                     "lastName":newUser.lastName,
                     "email": newUser.email,
                     "password": newUser.password,
+                    "confirmPassword": newUser.confirmPassword
                 }  
         }
 
