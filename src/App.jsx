@@ -10,13 +10,9 @@ function App() {
       
       
       <Navb />
-
-    
    
     
-    <div className='bg-orange-400 w-full h-screen'>
-      
-    </div>
+    
     </div>
   )
 }

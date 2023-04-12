@@ -1,10 +1,10 @@
-import Button from "./Button"
+
 import { useState } from "react";
 
 const Navb =() => {
     let Links =[
         {name:"HOME", link:"/"},
-        // {name:"LOGIN", link:"/"},
+        {name:"LOGIN", link:"/"},
         {name:"REGISTRO", link:"/"},
         {name:"SOBRE CODERVIEW", link:"/"},
         {name:"CONTACTO", link:"/"},
@@ -33,13 +33,11 @@ const Navb =() => {
             {
                 Links.map((link)=>(
                     <li key={link.name} className='md:ml-8 text-lg  md:my-0 my-4 '>
-                        <a href={link.link} className=" hover:text-orange-400 duration-500">{link.name}</a>
+                        <a href={link.link} className=" hover:text-orange-600 duration-500">{link.name}</a>
                     </li>
                 ))
             }
-            <Button>
-                LOGIN
-            </Button>
+            
         </ul>
         </div>
     </div>
