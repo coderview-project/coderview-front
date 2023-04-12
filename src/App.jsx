@@ -1,14 +1,14 @@
 import './App.css'
-import Nav from '../src/components/Nav'
-import Navbar from '../src/components/Navbar'
+
+
 import Navb from '../src/components/Navb'
 
 function App() {
 
   return (
     <div className="App">
-       {/* <Navbar />  */}
-      {/* <Nav />  */}
+      
+      
       <Navb />
 
     
