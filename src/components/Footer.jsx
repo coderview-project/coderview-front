@@ -4,10 +4,10 @@ import React, { useState } from "react";
 const Footer = () => {
     return (
 
-        <div className="absolute inset-x-0 bottom-0 h-16 text-center font-poppins bg-orange">
-            Factoría F5 @ 2023
+        <div className="h-12 text-white text-center font-poppins bg-orange">
+            <h1 className= "text-sm">Factoría F5 @ 2023
             <br></br>
-            Todos los derechos reservados
+            Todos los derechos reservados</h1>
         </div>
 
     )
