@@ -7,7 +7,7 @@ const Nav =() => {
         <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
           <img
             src="/CodeF5.png"
-            width="150"
+            width="160"
             height="50"
             alt="logo CodeRview" />
         </div>

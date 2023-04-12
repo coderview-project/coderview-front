@@ -7,9 +7,12 @@ function App() {
 
   return (
     <div className="App">
+       {/* <Navbar />  */}
+      {/* <Nav />  */}
       <Navb />
-     {/* <Nav />  */}
-    {/* <Navbar />  */}
+
+    
+   
     
     <div className='bg-orange-400 w-full h-screen'>
       
