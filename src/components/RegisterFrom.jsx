@@ -46,28 +46,28 @@ function RegisterForm() {
 
   return (
     <> 
-      <div className='w-1/3 grid justify-items-center w-screen'>
+      <div className='w-screen grid justify-items-center'>
           <form component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }} className='bg-salmon py-5 px-5 rounded-xl my-10'>
-            <div className='grid justify-center'>
-              <div className='flex mt-3'>
-                <label className='font-poppins font-bold mr-4 text-md flex self-center'> Nombre: </label> 
-                <input className='rounded-md py-1 hover:border-solid hover:border-orange hover:border-2 w-full' type='text' placeholder='Nombre' onChange={handleFirstNameChange} focus='true' required/>
+            <div className='grid grid-rows-5'>
+              <div className='flex justify-between mt-3 w-full'>
+                <label className='font-poppins font-bold mr-4 text-md'> Nombre: </label> 
+                <input className='rounded-md py-1' type='text' placeholder='Nombre' onChange={handleFirstNameChange} focus='true' required/>
               </div>
-              <div  className='flex mt-3'>
-                <p className='font-poppins font-bold mr-4 text-md flex self-center'> Apellido: </p> 
-                <input className='rounded-md py-1 hover:border-solid hover:border-orange hover:border-2 w-full' type='text' placeholder='Apellido' onChange={handleLastNameChange} focus='true' required/>
+              <div  className='flex justify-between mt-3 w-full'>
+                <label className='font-poppins font-bold mr-4 text-md'> Apellido: </label> 
+                <input className='rounded-md py-1' type='text' placeholder='Apellido' onChange={handleLastNameChange} focus='true' required/>
               </div>
-              <div className='flex mt-3' >
-                <p className='font-poppins font-bold mr-4 text-md flex self-center'> Email: </p> 
-                <input className='rounded-md py-1 hover:border-solid hover:border-orange hover:border-2 w-full' type='text' placeholder='Email' onChange={handleEmailChange} focus='true' required/>
+              <div className='flex justify-between mt-3 w-full' >
+                <label className='font-poppins font-bold mr-4 text-md'> Email: </label> 
+                <input className='rounded-md py-1 ' type='text' placeholder='Email' onChange={handleEmailChange} focus='true' required/>
               </div>
-              <div className='flex mt-3'>
-                <p className='font-poppins font-bold mr-4 text-md flex self-center'> Contraseña: </p> 
-                <input className='rounded-md py-1 hover:border-solid hover:border-orange hover:border-2 w-full' type='text' placeholder='Contraseña' onChange={handlePasswordChange} focus='true' required/>
+              <div className='flex justify-between mt-3 w-full'>
+                <label className='font-poppins font-bold mr-4 text-md'> Contraseña: </label> 
+                <input className='rounded-md py-1' type='text' placeholder='Contraseña' onChange={handlePasswordChange} focus='true' required/>
               </div>
-              <div className='flex mt-3'>
-                <p className='font-poppins font-bold mr-4 text-md flex self-center'> Confirmar contraseña: </p> 
-                <input className='rounded-md py-1 hover:border-solid hover:border-orange hover:border-2 w-fit' type='text' placeholder='Confirmar contraseña' onChange={handleConfirmPasswordChange} focus='true' required/> 
+              <div className='flex justify-between mt-3 w-full'>
+                <label className='font-poppins font-bold mr-4 text-md'> Confirmar contraseña: </label> 
+                <input className='rounded-md py-1' type='text' placeholder='Confirmar contraseña' onChange={handleConfirmPasswordChange} focus='true' required/> 
               </div>
             </div>
             <div className="w-full flex justify-center mt-4"> 
