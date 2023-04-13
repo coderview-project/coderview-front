@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Navb =() => {
     let Links =[
-        {name:"HOME", link:"/Home"},
+        {name:"HOME", link:"/"},
         {name:"LOGIN", link:"/"},
         {name:"REGISTRO", link:"/Register"},
         {name:"SOBRE CODERVIEW", link:"/"},

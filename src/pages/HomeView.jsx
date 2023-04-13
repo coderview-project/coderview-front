@@ -6,16 +6,16 @@ function HomeView() {
     return (
 
         <div>
-            <div><img className="bg-cover bg-top h-72 w-full object-fit"
+            <div><img className="bg-cover bg-top mt-36 h-72 w-full object-fit"
                 src="src\assets\social-media-shorted.jpg"
                 alt="background-home"></img>
             </div>
 
 
             <div><img className="h-full w-full bg-contain" src="src\assets\fonde de pantalla.png" alt="background-2-home"></img>
-                <p className="text-center object-fit text-2xl absolute inset-x-0 bottom-80 h-10 bg-white bg-opacity-80 font-poppins">¿Qué es CodeRview?</p>
+                <p className="text-center object-fit text-2xl absolute inset-x-0 inset-y-1/2 mt-16 h-10  bg-white bg-opacity-80 font-poppins">¿Qué es CodeRview?</p>
 
-                <p className="text-center leading-6 w-11/12 p-8 absolute inset-x-14 bottom-28 bg-white bg-opacity-80 rounded-xl font-poppins">CodeRview es una herramienta pedagógica diseñada para hacer y gestionar evaluaciones sobre el desempeño propio y de los compañeros durante procesos de aprendizaje, enfocada en particular al formato del Bootcamp. 
+                <p className="text-center leading-6 w-11/12 p-8 absolute inset-x-14 inset-y-2/3 bottom-28 bg-white bg-opacity-80 rounded-xl font-poppins h-40 font-bold">CodeRview es una herramienta pedagógica diseñada para hacer y gestionar evaluaciones sobre el desempeño propio y de los compañeros durante procesos de aprendizaje, enfocada en particular al formato del Bootcamp. 
                 
                 <br></br> <br></br>
                 
@@ -26,8 +26,6 @@ function HomeView() {
 
                 <p className="text-center leading-6 p-8 absolute inset-x-14 top-full bg-white bg-opacity-80 h-96 rounded-xl font-poppins"></p>
             </div>
-
-            <Footer />
         </div>
 
     )

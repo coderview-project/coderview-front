@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import AdminView from './pages/AdminView'
-import App from './App'
+import Router from './router/router'
 import './index.css'
-import Register from './pages/Register'
+'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <AdminView /> */}
-    <App/> 
+    <Router/>
   </React.StrictMode>,
 )

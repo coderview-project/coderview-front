@@ -1,10 +1,11 @@
 import RegisterForm from '../components/RegisterFrom'
 import Navb from '../components/Navb';
+import Footer from '../components/Footer';
 
 function Register() {
     return(
         <>
-       
+       <Navb/>
         <div className='grid justify-items-stretch'> 
             <div className='w-screen h-36 mt-44'>
                 <img className='w-screen h-40 object-cover' src='src\assets\register_header.jpg'/> 
@@ -13,7 +14,8 @@ function Register() {
                 Registro de usuario
             </p>
         </div>
-            <RegisterForm/> 
+        <RegisterForm/> 
+        <Footer/>
         </> 
     )
 }
