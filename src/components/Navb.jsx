@@ -3,12 +3,11 @@ import { useState } from "react";
 
 const Navb =() => {
     let Links =[
-        {name:"HOME", link:"/"},
+        {name:"HOME", link:"/Home"},
         {name:"LOGIN", link:"/"},
         {name:"REGISTRO", link:"/Register"},
         {name:"SOBRE CODERVIEW", link:"/"},
         {name:"CONTACTO", link:"/"},
-
     ];
 
     let [open,setOpen]=useState(false);

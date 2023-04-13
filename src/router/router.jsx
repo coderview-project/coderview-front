@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { userHandler } from "../handler/userHandler";
 import NotFound from "../pages/NotFound";
+import HomeView from "../pages/HomeView";
+import Register from "../pages/Register";
 
 
 
@@ -13,12 +15,12 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element:<Home />, 
+                        element:<Root/>, 
                         loader: loaderAdvertisement,
                     },
                     {
-                        path: '/Register',
-                        element: <Register/>,
+                        path: '/Home',
+                        element: <HomeView/>,
                     }, 
                     // {
                     //     path: '/join',
