@@ -2,14 +2,14 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{html, js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   theme: {
     colors: {
-      'orange': '#ff4700',
+      'orange': '#FF4700',
       'black': '#020100',
       'grey': '#5E574D',
-      'salmon': '#ffa37f',
+      'salmon': '#FFA37F',
       'white': '#FFFFFF'
     },
     fontFamily: {
@@ -18,5 +18,22 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    '@tailwindcss/forms',
+    '@tailwindcss/aspect-ratio',
+
+  ],
 }
+
+  
+
+  // module.exports = {
+
+  //   plugins: [
+  //       require('flowbite/plugin')
+  //   ]
+
+  // }
+
+
+

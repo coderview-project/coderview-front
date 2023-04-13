@@ -1,11 +1,16 @@
 import './App.css'
 import Register from './pages/Register'
-
+import Navb from '../src/components/Navb'
 
 function App() {
 
   return (
-    <Register/> 
+    
+    <>     
+      <Navb/>
+      <Register/> 
+
+    </>
   )
 }
 
