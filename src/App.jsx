@@ -1,6 +1,8 @@
 import './App.css'
 import Register from './pages/Register'
 import Navb from '../src/components/Navb'
+import './App.css'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -9,8 +11,8 @@ function App() {
     <>     
       <Navb/>
       <Register/> 
-
-    </>
+      <Footer />
+    </>  
   )
 }
 
