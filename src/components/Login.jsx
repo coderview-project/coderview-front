@@ -22,105 +22,91 @@ function Login() {
       alert("La contraseña debe tener al menos 6 caracteres");
       return;
     }
-    {/*try {
+    {
+      /*try {
       const response = await axios.post("/api/login", { email, password });
       console.log(response.data);
     } catch (error) {
       console.error(error);
-    } */}
+    } */
+    }
   };
 
-
-    return (
-        <div className="flex flex-row ">
-            <div className="">
-                <div>
-                    <img src="src/assets/CodeRview negro.png" alt="Logo" className='h-full w-full bg-contain'/>
-                </div>
-                <div className='rounder-sm'>
-                    <h2 className='' >
-                        ¡Accede a CodeRview y empieza tu evaluación!
-                    </h2>
-                </div>
-                <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
-                    <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
-                        <h1 className="w-max justify-center px-4 py-2 tracking-wide text-black bg-orange rounded-md font-[rubik]">
-                            Login
-                        </h1>
-                        <form 
-                        className="mt-6" 
-                        onSubmit={handleSubmit} 
-                        action="">
-                            <div className="mb-2">
-                                <label 
-                                htmlFor="email" 
-                                className="block text-sm font-semibold text-gray-800">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                                    placeholder='Escriba su Email'
-                                />
-                            </div>
-                            <div className="mb-2">
-                                <label 
-                                htmlFor="password" 
-                                className="block text-sm font-semibold text-gray-800">
-                                    Contraseña
-                                </label>
-                                <input
-                                    type="password"
-                                    id="password"
-                                    name="pasword"
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                                    placeholder='Escriba su Password'
-                                />
-                            </div>
-                            <a
-                                href="#"
-                                className="text-xs text-purple-600 hover:underline"
-                            >
-                                ¿Olvidaste tu contraseña?
-                            </a>
-                            <div className="mt-6">
-                                <button 
-                                className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-orange rounded-md hover:bg-salmon focus:outline-none focus:bg-orange"
-                                type="botton"
-                                onClick={() => setShowPassword(!showPassword)} > {showPassword ? <AiOutlineEyeInvisible/> :  <AiOutlineEye/>}
-                                </button>
-                            </div>
-                            <div>
-                              <button
-                              type="submit"
-                              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-orange rounded-md hover:bg-salmon focus:outline-none focus:bg-orange"
-                              >
-                                Iniciar Sesión
-                              </button>
-                            </div>
-                        </form>
-
-                        <p className="mt-8 text-xs font-light text-center text-gray-700">
-                            {" "}
-                            ¿No tienes una cuenta?{" "}
-                            <a
-                                href="#"
-                                className="font-medium text-purple-600 hover:underline"
-                            >
-                                Regístrate
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="flex flex-col sm:flex-row justify-center items-center m-8 p-8 drop-shadow-2xl">
+    <div className="flex flex-col justify-center items-center sm:w-1/2">
+      <img
+        src="src/components/assets/CodeRview negro.png"
+        alt="Logo"
+        className="h-40 w-40 p-2 justify-center"
+      />
+      <h1 className="text-orange text-2xl text-center font-poppins">
+        Powered by Factoría F5
+      </h1>
+      <div className="mt-8 p-4 opacity-50 bg-salmon rounded-lg">
+        <h2 className="text-white text-center text-2xl font-bold font-poppins font-medium">
+          ¡Accede a CodeRview y empieza tu evaluación!
+        </h2>
+      </div>
+    </div>
+    <div className="flex p-4 sm:p-20 m-4 justify-center sm:w-1/2">
+      <div className="bg-salmon rounded-md p-6 m-6 lg:w-max place-items-center opacity-80">
+        <h1 className="text-white text-center text-2xl bg-orange rounded-lg m-4 p-2">
+          INICIO SESION
+        </h1>
+        <form onSubmit={handleSubmit} action="">
+          <div className="mb-2 rounder-lg">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold text-gray-800 mt-5"
+            ></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="block w-full px-4 py-2 mt-2 text-black border rounded-md focus:border-orange focus:ring-orange-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              placeholder="Email"
+              alt="Email"
+            />
+          </div>
+          <div className="mb-2">
+            <label
+              htmlFor="password"
+              className="block text-sm font-semibold text-gray-800"
+            ></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-orange-400 focus:ring-orange-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              placeholder="Contraseña"
+              alt="Contraseña"
+            />
+          </div>
+  
+          <button
+            type="submit"
+            className="w-full mt-4 px-4 py-2 tracking-wide text-white text-xl transition-colors duration-200 transform bg-orange rounded-md hover:bg-orange focus:outline-none focus:bg-orange"
+          >
+            ENVIAR
+          </button>
+        </form>
+  
+        <p className="mt-8 text-xs font-light text-center text-gray-700">
+       
+            ¿No tienes una cuenta?{" "}
+            <a href="#" className="font-medium text-black hover:underline">
+              Regístrate
+            </a>
+          </p>
         </div>
-    );
-};
+      </div>
+    </div>
+  );
+}
 
 export default Login;
