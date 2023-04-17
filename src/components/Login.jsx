@@ -33,7 +33,7 @@ function Login() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center m-8 p-8 drop-shadow-2xl">
+    <div className="flex flex-col sm:flex-row justify-center items-center drop-shadow-lg">
     <div className="flex flex-col justify-center items-center sm:w-1/2">
       <img
         src="src/components/assets/CodeRview negro.png"
@@ -50,8 +50,8 @@ function Login() {
       </div>
     </div>
     <div className="flex p-4 sm:p-20 m-4 justify-center sm:w-1/2">
-      <div className="bg-salmon rounded-md p-6 m-6 lg:w-max place-items-center opacity-80">
-        <h1 className="text-white text-center text-2xl bg-orange rounded-lg m-4 p-2">
+      <div className="bg-salmon rounded-md m-6 p-6 lg:w-max place-items-center opacity-80">
+        <h1 className="text-white text-center text-2xl bg-orange rounded-lg mt-4 px-4 py-2">
           INICIO SESION
         </h1>
         <form onSubmit={handleSubmit} action="">
