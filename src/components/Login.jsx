@@ -91,6 +91,7 @@ function Login() {
           <button
             type="submit"
             className="w-full mt-4 px-4 py-2 tracking-wide text-white text-xl transition-colors duration-200 transform bg-orange rounded-md hover:bg-orange focus:outline-none focus:bg-orange"
+            alt="button"
           >
             ENVIAR
           </button>
