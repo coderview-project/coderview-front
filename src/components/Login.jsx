@@ -58,7 +58,7 @@ function Login() {
           <div className="mb-2 rounder-lg">
             <label
               htmlFor="email"
-              className="block text-sm font-semibold text-gray-800 mt-5"
+              className="block text-sm font-semibold text-grey mt-5"
             ></label>
             <input
               type="email"
@@ -66,7 +66,7 @@ function Login() {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="block w-full px-4 py-2 mt-2 text-black border rounded-md focus:border-orange focus:ring-orange-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-black border rounded-md focus:border-orange focus:ring-orange focus:outline-none focus:ring focus:ring-opacity-40"
               placeholder="Email"
               alt="Email"
             />
@@ -74,7 +74,7 @@ function Login() {
           <div className="mb-2">
             <label
               htmlFor="password"
-              className="block text-sm font-semibold text-gray-800"
+              className="block text-sm font-semibold text-grey"
             ></label>
             <input
               type="password"
@@ -82,7 +82,7 @@ function Login() {
               name="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-orange-400 focus:ring-orange-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-orange focus:ring-orange focus:outline-none focus:ring focus:ring-opacity-40"
               placeholder="Contraseña"
               alt="Contraseña"
             />
