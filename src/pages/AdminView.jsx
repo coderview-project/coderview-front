@@ -17,15 +17,15 @@ function AdminView() {
         
             </div>
 
-            <div className="flex justify-center h-24 w-24 mx-56 my-12 w-24 bg-contain">
+            <div className="flex justify-center h-24 w-24 mx-56 my-12 bg-contain">
                 <button type="button" className=""><img className="h-18 w-18" src= "src\assets\icon _plus circle_.png" alt="create-bootcamp"></img></button>
             </div>
 
-            <div className="flex justify-center h-24 w-24 mx-56 my-12 w-24 bg-contain">
+            <div className="flex justify-center h-24 w-24 mx-56 my-12 bg-contain">
                 <button type="button" className=""><img className="h-18 w-18" src= "src\assets\icon _gear_.png" alt="edit-bootcamp"></img></button>
             </div>
 
-            <div className="flex justify-center h-24 w-24 mx-56 my-12 w-24 bg-contain">
+            <div className="flex justify-center h-24 w-24 mx-56 my-12 bg-contain">
                 <button type="button" className=""><img className="h-18 w-18" src= "src\assets\icon _minus circle_.png" alt="edit-bootcamp"></img></button>
             </div>
             <Footer />
