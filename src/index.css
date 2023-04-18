@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities; 
+=======
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+>>>>>>> feature/homeview
