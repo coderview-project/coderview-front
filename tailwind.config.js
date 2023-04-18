@@ -16,7 +16,11 @@ export default {
       'poppins': ['Poppins', 'sans-serif'],
       'rubik': ['Rubik', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'homeView-bg': "url('src\assets\fondo_de_pantalla.png')",
+      }
+    },
   },
   plugins: [
     '@tailwindcss/forms',
