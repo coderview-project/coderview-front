@@ -1,14 +1,13 @@
 
 import './App.css'
+import UserView from './pages/UserView'
 
 function App() {
 
   return (
     <div className="App">
      
-      <p className="read-the-docs">
-        Hello world
-      </p>
+      <UserView/>
     </div>
   )
 }
