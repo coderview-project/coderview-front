@@ -16,7 +16,11 @@ export default {
       'poppins': ['Poppins', 'sans-serif'],
       'rubik': ['Rubik', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'fondo': "url('src/components/assets/fondo de pantalla.png')",
+      }
+    },
   },
   plugins: [],
 }

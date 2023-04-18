@@ -33,8 +33,8 @@ function Login() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center drop-shadow-lg">
-    <div className="flex flex-col justify-center items-center sm:w-1/2">
+    <div className="flex flex-col sm:flex-row justify-center items-center bg-gradient-to-t from-orange ... shadow-lg">
+    <div className="flex flex-col justify-center items-center sm: w-1/2">
       <img
         src="src/components/assets/CodeRview negro.png"
         alt="Logo"
@@ -43,8 +43,8 @@ function Login() {
       <h1 className="text-orange text-2xl text-center font-poppins">
         Powered by Factoría F5
       </h1>
-      <div className="mt-8 p-4 opacity-50 bg-salmon rounded-lg">
-        <h2 className="text-white text-center text-2xl font-bold font-poppins font-medium">
+      <div className="mt-8 p-4 opacity-80 bg-salmon rounded-lg">
+        <h2 className="text-white text-center text-2xl font-bold font-poppins">
           ¡Accede a CodeRview y empieza tu evaluación!
         </h2>
       </div>
