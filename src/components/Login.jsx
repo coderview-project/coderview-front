@@ -33,24 +33,24 @@ function Login() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center bg-gradient-to-t from-orange ... shadow-lg">
+    <div className="flex flex-col sm:flex-row justify-center items-center bg-gradient-to-t from-orange ... ">
     <div className="flex flex-col justify-center items-center sm: w-1/2">
       <img
         src="src/components/assets/CodeRview negro.png"
         alt="Logo"
         className="h-40 w-40 p-2 justify-center"
       />
-      <h1 className="text-orange text-2xl text-center font-poppins">
+      <h1 className="text-white text-2xl text-center font-poppins">
         Powered by Factoría F5
       </h1>
-      <div className="mt-8 p-4 opacity-80 bg-salmon rounded-lg">
-        <h2 className="text-white text-center text-2xl font-bold font-poppins">
+      <div className="mt-8 p-4 bg-white rounded-lg">
+        <h2 className="text-black text-center text-2xl  font-poppins">
           ¡Accede a CodeRview y empieza tu evaluación!
         </h2>
       </div>
     </div>
     <div className="flex p-4 sm:p-20 m-4 justify-center sm:w-1/2">
-      <div className="bg-salmon rounded-md m-6 p-6 lg:w-max place-items-center opacity-80">
+      <div className="bg-white rounded-md m-6 p-6 lg:w-max place-items-center opacity-80">
         <h1 className="text-white text-center text-2xl bg-orange rounded-lg mt-4 px-4 py-2">
           INICIO SESION
         </h1>
