@@ -1,18 +1,20 @@
 import * as React from 'react';
 import {useState} from 'react';
+import { userHandler } from '../handler/userHandler';
 
 
 function RegisterForm() {
 
-    const [firstName, setFirstName] = useState('');
+    const [userName, setUserName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] =useState('');
+    // const[userRolId, setUserRolId] = useState(null);
+    // const [confirmPassword, setConfirmPassword] =useState('');
 
-    const handleFirstNameChange = (event) => {
-        let firstNameInput = event.target.value;
-        setFirstName (firstNameInput);
+    const handleUserNameChange = (event) => {
+        let userNameInput = event.target.value;
+        setUserName (userNameInput);
       };
     
     const handleLastNameChange = (event) => {
@@ -30,16 +32,20 @@ function RegisterForm() {
         setPassword (passwordInput); 
     };
 
-    const handleConfirmPasswordChange = (event) => {
-        let confirmPasswordInput = event.target.value; 
-        setConfirmPassword (confirmPasswordInput);
-    };
+    // const handleUserRolIdChange = (event) => {
+    //   let userRolIdPicked = event.target.value; 
+    //   setUserRolId(userRolIdPicked);
+    // }
+    // const handleConfirmPasswordChange = (event) => {
+    //     let confirmPasswordInput = event.target.value; 
+    //     setConfirmPassword (confirmPasswordInput);
+    // };
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let newUser = { firstName, lastName, email, password, confirmPassword };
+        let newUser = { userName, lastName, email, password };
         userHandler.postUser(newUser);
-        event.target.reset()
+        event.target.reset; 
       };
 
 
@@ -50,7 +56,7 @@ function RegisterForm() {
             <div className='grid grid-rows-5'>
               <div className='flex justify-between mt-3 w-full'>
                 <label className='font-poppins font-bold mr-4 text-md'> Nombre: </label> 
-                <input className='rounded-md py-1' type='text' placeholder='Nombre' onChange={handleFirstNameChange} focus='true' required/>
+                <input className='rounded-md py-1' type='text' placeholder='Nombre' onChange={handleUserNameChange} focus='true' required/>
               </div>
               <div  className='flex justify-between mt-3 w-full'>
                 <label className='font-poppins font-bold mr-4 text-md'> Apellido: </label> 
@@ -62,12 +68,27 @@ function RegisterForm() {
               </div>
               <div className='flex justify-between mt-3 w-full'>
                 <label className='font-poppins font-bold mr-4 text-md'> Contraseña: </label> 
-                <input className='rounded-md py-1' type='text' placeholder='Contraseña' onChange={handlePasswordChange} focus='true' required/>
+                <input className='rounded-md py-1' type='password' placeholder='Contraseña' onChange={handlePasswordChange} focus='true' required/>
               </div>
-              <div className='flex justify-between mt-3 w-full'>
+              {/* <div id="userRol-group" className='flex justify-center w-full mt-3 font-poppins font-bold'>¿Eres formador/a o coder?</div>
+              <div role="group" aria-labelledby="my-radio-group">
+                <div className='flex justify-around' > 
+                <label>
+                  <input type="radio" name="userRol" value="2" className='mr-3' onChange={handleUserRolIdChange}
+                   />
+                    Formador
+                </label>
+                <label>
+                  <input type="radio" name="userRol" value="3" className='mr-3' onChange={handleUserRolIdChange} />
+                    Coder
+                </label>
+                </div>
+                </div> */}
+
+              {/* <div className='flex justify-between mt-3 w-full'>
                 <label className='font-poppins font-bold mr-4 text-md'> Confirmar contraseña: </label> 
                 <input className='rounded-md py-1' type='text' placeholder='Confirmar contraseña' onChange={handleConfirmPasswordChange} focus='true' required/> 
-              </div>
+              </div> */}
             </div>
             <div className="w-full flex justify-center mt-4"> 
             <button
