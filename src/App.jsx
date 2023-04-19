@@ -1,6 +1,6 @@
 import Navb from '../src/components/Navb'
 import Footer from './components/Footer'
-import HomeView from './pages/HomeView'
+import AdminBootcamp from './pages/AdminBootcamp'
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     
     <>     
       <Navb/>
-      <HomeView/>
+      <AdminBootcamp/>
       <Footer/>
     </>  
   )
