@@ -48,7 +48,7 @@ function User() {
             <button className="text-black">CO-EVALUAR</button>
           </div>
           <div className="flex  m-4 p-4   rounded-3xl bg-orange text-center justify-center ">
-            <button className="text-white ">CONSULTAR EVALUCIONES</button>
+            <button className="text-white ">CONSULTAR EVALUACIONES</button>
           </div>
         </div>
       </div>
