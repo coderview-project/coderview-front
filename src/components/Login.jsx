@@ -1,34 +1,25 @@
 import React, { useState } from "react";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import Footer from "./Footer";
 
 function Login() {
-  const [email, setEmail] = useState("");
+  const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
 
-  function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }
+  const handleUserNameChange = (event) => {
+    let userNameInput = event.target.value;
+    setUserName(userNameInput);
+  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!isValidEmail(email)) {
-      alert("El correo electrónico no es válido");
-      return;
-    }
+  const handlePasswordChange = (event) => {
+    let passwordInput = event.target.value;
+    setLastName(passwordInput);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     if (password.length < 6) {
       alert("La contraseña debe tener al menos 6 caracteres");
       return;
-    }
-    {
-      /*try {
-      const response = await axios.post("/api/login", { email, password });
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
-    } */
     }
   };
 
@@ -53,7 +44,7 @@ function Login() {
         <div className="flex p-4 sm:p-20 m-4 justify-center sm:w-1/2">
           <div className="bg-white rounded-md m-6 p-6 lg:w-max place-items-center opacity-80">
             <h1 className="text-white text-center text-2xl bg-orange rounded-lg mt-4 px-4 py-2">
-              INICIO SESION
+              INICIA SESION
             </h1>
             <form onSubmit={handleSubmit} action="">
               <div className="mb-2 rounder-lg">
@@ -62,14 +53,13 @@ function Login() {
                   className="block text-sm font-semibold text-grey mt-5"
                 ></label>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="userName"
+                  id="userName"
+                  name="userName"
+                  onChange={handleUserNameChange}
                   className="block w-full px-4 py-2 mt-2 text-black border rounded-md focus:border-orange focus:ring-orange focus:outline-none focus:ring focus:ring-opacity-40"
-                  placeholder="Email"
-                  alt="Email"
+                  placeholder="Nombre de usuario"
+                  alt="userName"
                 />
               </div>
               <div className="mb-2">
@@ -81,8 +71,7 @@ function Login() {
                   type="password"
                   id="password"
                   name="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  onChange={handlePasswordChange}
                   className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-orange focus:ring-orange focus:outline-none focus:ring focus:ring-opacity-40"
                   placeholder="Contraseña"
                   alt="Contraseña"
@@ -100,7 +89,7 @@ function Login() {
 
             <p className="mt-8 text-xs font-light text-center text-gray-700">
 
-              ¿No tienes una cuenta?{" "}
+              ¿No tienes una cuenta?
               <a href="/Register" className="font-medium text-black hover:underline">
                 Regístrate
               </a>
