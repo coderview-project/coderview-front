@@ -2,10 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import AdminBootcampView from './pages/AdminBootcampView'
 import './index.css'
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AdminBootcampView />
+    <App></App>
     
   </React.StrictMode>,
 )

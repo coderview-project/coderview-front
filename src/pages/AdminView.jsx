@@ -52,4 +52,4 @@ function AdminView() {
 
     )
 }
-export default AdminView
+export default AdminView;

@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './App.css'
-import AdminBootcampView from '../src/pages/AdminBootcampView'
+import AdminView from './pages/AdminView'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <AdminBootcampView />
+      
+      {/*<AdminBootcampView />*/}
+      <AdminView />
+
     </div>
   )
 }
