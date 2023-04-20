@@ -14,5 +14,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-// text-center relative h-32 bg-orange
