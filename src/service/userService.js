@@ -49,6 +49,24 @@ export const userService = {
          }
 
     },
+    async postInstructor(newUserRequestModel) {
+        let options = {
+            url: 'User/PostInstructor',
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Authorization': 
+            }
+        }
+        let response = await apiClient.post("/User/PostInstructor", newUserRequestModel, options);
+        if (response.status === 200) 
+         {   
+            alert("Formador registrado con éxito");  
+         } else { 
+            alert("Algo salió mal...");
+         }
+
+    },
     async deleteUser(id) {
         await apiClient.delete("/User/DeactivateUser?id=" + id)
     },

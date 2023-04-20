@@ -81,7 +81,9 @@ import {
     Route
 } from "react-router-dom";
 import App from '../App';
-import Register from '../pages/Register'
+import RegisterCoder from '../pages/RegisterCoder'
+import HomeView from '../pages/HomeView';
+import RegisterInstructor from '../pages/RegisterInstructor';
 
 
 
@@ -90,8 +92,9 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<App />} />
-                {/* <Route path="/Home" element={<HomeView/>} /> */}
-                <Route path='/Register' element={<Register />} />
+                <Route path='/Register' element={<RegisterCoder />} />
+                <Route path='/Home' element={<HomeView/>} />
+                <Route path='/RegisterInstructor' element={<RegisterInstructor/>} />
             </Routes>
         </BrowserRouter>
     )

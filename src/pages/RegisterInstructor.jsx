@@ -1,8 +1,8 @@
-import RegisterForm from '../components/RegisterFrom'
 import Navb from '../components/Navb';
 import Footer from '../components/Footer';
+import RegisterInstructorForm from '../components/RegisterInstructorForm';
 
-function Register() {
+function RegisterInstructor() {
     return(
         <>
        <Navb/>
@@ -11,13 +11,13 @@ function Register() {
                 <img className='w-screen h-40 object-cover' src='src\assets\register_header.jpg'/> 
             </div> 
             <p className='text-xl uppercase text-white bg-orange text-center py-3 font-poppins'> 
-                Registro de usuario
+                Registro de formadores
             </p>
         </div>
-        <RegisterForm/> 
+        <RegisterInstructorForm/> 
         <Footer/>
         </> 
     )
 }
 
-export default Register; 
+export default RegisterInstructor; 

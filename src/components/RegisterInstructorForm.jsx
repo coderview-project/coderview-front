@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { userHandler } from '../handler/userHandler';
+import RegisterForm from './RegisterFrom';
 
 
-function RegisterForm() {
+function RegisterInstructorForm() {
 
   const [userName, setUserName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -34,12 +35,11 @@ function RegisterForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newUser = { userName, lastName, email, password };
-    userHandler.postUser(newUser);
+    let newInstructor = { userName, lastName, email, password };
+    userHandler.postInstructor(newInstructor);
     resetForm();
   };
 
-  
   const resetForm = () => {
     document.getElementById('registerForm').reset();
   }
@@ -84,21 +84,13 @@ function RegisterForm() {
             <button
               type="submit" onClick={handleSubmit}
               className='text-white font-poppins uppercase text-center bg-orange py-3 px-7 rounded-lg hover:border-solid hover:border-white hover:border-2 my-4'>
-              Enviar
+              Registrar
             </button>
           </div>
-          <div className="flex justify-center">
-            <div>
-              <p className='my-2'>
-                ¿Ya tienes una cuenta? <a href="#" className='text-orange font-poppins hover:text-white'> Inicia sesión </a>
-              </p>
-            </div>
-          </div>
-
         </form>
       </div>
     </>
   );
 }
 
-export default RegisterForm; 
+export default RegisterInstructorForm; 

@@ -11,11 +11,24 @@ export const userHandler = {
             "lastName":newUser.lastName,
             "email": newUser.email,
             "password": newUser.password,
-            // "userRolId": newUser.userRolId
         }
 
         return userService.postUser(newUserRequestModel);
 
+    },
+
+    async postInstructor(newInstructor) {
+        if(!newInstructor) {
+            return;
+        }
+
+        let newUserRequestModel = {
+            "userName": newInstructor.userName,
+            "lastName":newInstructor.lastName,
+            "email": newInstructor.email,
+            "password": newInstructor.password,
+        }
+        return userService.postInstructor(newUserRequestModel);
     },
 
     async loadUser() {

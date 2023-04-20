@@ -12,7 +12,7 @@ const NotFound = () => {
         <span role="img" aria-label="sad face" style={{fontSize: "30px"}}>😔</span>
         <p>{error.statusText || error.message}</p>
         
-        <Link to="/">Please click here to return to the home page</Link>
+        <Link to="/Home">Please click here to return to the home page</Link>
         <br></br>
       </div>
     );
