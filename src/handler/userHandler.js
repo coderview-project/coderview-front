@@ -14,9 +14,7 @@ export const userHandler = {
         }
 
         return userService.postUser(newUserRequestModel);
-
     },
-
     async postInstructor(newInstructor) {
         if(!newInstructor) {
             return;
@@ -30,7 +28,12 @@ export const userHandler = {
         }
         return userService.postInstructor(newUserRequestModel);
     },
-
+    async loginUser(loginU) {
+         let loginRequestModel = {
+            "userName": loginU.userName,
+            "userPassword": loginU.userPassword
+         }
+    },
     async loadUser() {
         var result = await  userService.getUser();
         return result; 

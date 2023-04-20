@@ -18,7 +18,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'homeView-bg': "url('src\assets\fondo_de_pantalla.png')",
+        'fondo': "url('src/components/assets/fondo de pantalla.png')",
       }
     },
   },
@@ -29,15 +29,6 @@ export default {
   ],
 }
 
-  
-
-  // module.exports = {
-
-  //   plugins: [
-  //       require('flowbite/plugin')
-  //   ]
-
-  // }
 
 
 

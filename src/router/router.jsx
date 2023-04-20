@@ -84,8 +84,7 @@ import App from '../App';
 import RegisterCoder from '../pages/RegisterCoder'
 import HomeView from '../pages/HomeView';
 import RegisterInstructor from '../pages/RegisterInstructor';
-
-
+import LoginView from '../pages/LoginView';
 
 const Router = () => {
     return (
@@ -95,6 +94,7 @@ const Router = () => {
                 <Route path='/Register' element={<RegisterCoder />} />
                 <Route path='/Home' element={<HomeView/>} />
                 <Route path='/RegisterInstructor' element={<RegisterInstructor/>} />
+                <Route path='/Login' element={<LoginView />}/>
             </Routes>
         </BrowserRouter>
     )

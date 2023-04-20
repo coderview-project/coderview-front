@@ -4,7 +4,7 @@ import { useState } from "react";
 const Navb =() => {
     let Links =[
         {name:"HOME", link:"/"},
-        {name:"LOGIN", link:"/"},
+        {name:"LOGIN", link:"/Login"},
         {name:"REGISTRO", link:"/Register"},
         {name:"SOBRE CODERVIEW", link:"/"},
         {name:"CONTACTO", link:"/"},
