@@ -23,7 +23,7 @@ export default function RegisterModal() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar los datos del formulario
+ 
     console.log("Datos del formulario:", bootcamp);
   };
 
