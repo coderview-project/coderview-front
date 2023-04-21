@@ -1,8 +1,8 @@
-import { Outlet } from "react-router-dom";
-import Footer from "../components/Footer";
+//import { Outlet } from "react-router-dom";
+//import Footer from "../components/Footer";
 
 
-function Root() {
+{/*function Root() {
 
     return (
         <>
@@ -13,4 +13,4 @@ function Root() {
     )
 }
 
-export default Root;
+export default Root;*/}

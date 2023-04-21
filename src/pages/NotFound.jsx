@@ -1,8 +1,8 @@
-import { useRouteError, Link } from "react-router-dom";
+//import { useRouteError, Link } from "react-router-dom";
 
 
 
-const NotFound = () => {
+{/* const NotFound = () => {
     const error = useRouteError();
 
   
@@ -19,4 +19,4 @@ const NotFound = () => {
     );
   };
   
-  export default NotFound;
+export default NotFound;*/ }

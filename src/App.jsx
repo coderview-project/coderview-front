@@ -1,16 +1,12 @@
+import React from "react";
+import RegisterModal from '../src/components/RegisterModal';
 
-import './App.css'
-
-function App() {
-
+const App = () => {
   return (
-    <div className="App">
-     
-      <p className="read-the-docs">
-        Hello world
-      </p>
+    <div >
+       <RegisterModal/>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
