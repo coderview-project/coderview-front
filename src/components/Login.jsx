@@ -12,7 +12,7 @@ function Login() {
 
   const handlePasswordChange = (event) => {
     let passwordInput = event.target.value;
-    setLastName(passwordInput);
+    setPassword(passwordInput);
   };
 
   const handleSubmit = async (event) => {
@@ -21,7 +21,11 @@ function Login() {
       alert("La contraseña debe tener al menos 6 caracteres");
       return;
     }
+    let loginU = { userName, password};
+    userHandler.postUser(loginU);
   };
+
+  
 
   return (
     <>

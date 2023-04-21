@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import '../pages/styleSheetPages/ContactUs.css'
-import Navbar from '../components/Navbar'
+import Navb from "../components/Navb";
+import Footer from "../components/Footer";
+
 
 
 function Contact() {
@@ -13,7 +14,7 @@ function Contact() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    const email = "contact@sakurakimonos.com";
+    const email = "contact@coderview.com";
     const subject = "Query form";
     const body = message;
     const mailtoUrl = `mailto:${email}?subject=${subject}&body=${body}`;
@@ -24,25 +25,25 @@ function Contact() {
 
   return (
     <>
-    <Navbar/>
-    <div className="text-container-contact d-flex justify-content-center ">
-      <form className="form-contact" onSubmit={handleFormSubmit}>
-        <h2 className="titleContact">Contact with us</h2>
-        <br></br>
-        <label>
+    <Navb/>
+    <div className="w-screen h-screen bg-gradient-to-t from-orange ...">
+    <h2 className="font-poppins flex justify-center text-2xl pt-72 m-5  w-full"> Contacta con el equipo de CodeRview</h2>
+      <form className="form flex justify-center flex-col" onSubmit={handleFormSubmit}>
+        <label className="flex justify-center">
           <textarea
             value={message}
+            className="mt-5 border-white h-48 w-1/2 rounded-md"
             onChange={handleTextareaChange}
-            placeholder="   Write your message here"
+            placeholder="    Escriba su mensaje aquí "
           />
         </label>
-        <button className="btn btn-primary" id="btn-ad" type="submit">
-        Send Message
+        <button className="uppercase bg-white hover:border-solid hover:border-2 hover:border-black hover:text-orange p-3 rounded-md w-72 flex justify-center self-center mt-5" id="btn-ad" type="submit">
+        Enviar
         </button>
-        
       </form>
-      
+      <h3 className="font-poppins p-3 mt-6  flex justify-center w-full rounded-md hover:underline text-sm"> Al hacer click en ENVIAR se te redirigirá a tu servicio de e-mail </h3>
     </div>
+    <Footer/>
     </>   
   );
 }

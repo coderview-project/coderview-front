@@ -7,7 +7,7 @@ const Navb =() => {
         {name:"LOGIN", link:"/Login"},
         {name:"REGISTRO", link:"/Register"},
         {name:"SOBRE CODERVIEW", link:"/"},
-        {name:"CONTACTO", link:"/"},
+        {name:"CONTACTO", link:"/Contact"},
     ];
 
     let [open,setOpen]=useState(false);
@@ -24,8 +24,8 @@ const Navb =() => {
              />
             </span>
         <div onClick={()=>setOpen(!open)}  className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">
-        <svg name={open ? 'close': 'menu'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <svg name={open ? 'close': 'menu'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+            <path strokeLineCap="round" strokeLineJoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
         <div/>
     </div>

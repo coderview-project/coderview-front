@@ -67,9 +67,9 @@ export const userService = {
          }
 
     },
-    async loginUser(loginU) {
+    async loginUser(loginRequestModel) {
         let options= {
-            url: 'User/PostInstructor',
+            url: 'User/Login',
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',

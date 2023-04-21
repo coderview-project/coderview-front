@@ -33,6 +33,7 @@ export const userHandler = {
             "userName": loginU.userName,
             "userPassword": loginU.userPassword
          }
+         return userService.loginUser(loginRequestModel);
     },
     async loadUser() {
         var result = await  userService.getUser();
