@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Footer from "./Footer";
+import {UserContext} from '../context/UserContext';
+import { loginService } from "../handler/loginService";
+import { useNavigate } from "react-router-dom";
+
 
 function Login() {
+  // const { userStorage, setUserStorage } = useContext(UserContext);
   const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+  const navigate = useNavigate(); 
+  
 
   const handleUserNameChange = (event) => {
     let userNameInput = event.target.value;
@@ -11,20 +18,37 @@ function Login() {
   };
 
   const handlePasswordChange = (event) => {
-    let passwordInput = event.target.value;
-    setPassword(passwordInput);
+    let userPasswordInput = event.target.value;
+    setUserPassword(userPasswordInput);
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    if (password.length < 6) {
-      alert("La contraseña debe tener al menos 6 caracteres");
-      return;
+  const handleLogin = async (formData) => {
+    try {
+      const response = await loginService(formData);
+      localStorage.setItem("userData", JSON.stringify(response));
+      navigate('/LoggedViewTest');
+    } catch (error) {
+      if(error, response) {
+        handleResponseError(error, response);
+      }
     }
-    let loginU = { userName, password};
-    userHandler.postUser(loginU);
   };
 
+  const handleResponseError = (response) => {
+    if(response.status === 400 || response.status === 422) {
+      alert(response.data.error);
+    }
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const loginData = {
+      userName: userName,
+      userPassword: userPassword,
+    };
+
+    handleLogin(loginData);
+  };
   
 
   return (
@@ -50,7 +74,7 @@ function Login() {
             <h1 className="text-white text-center text-2xl bg-orange rounded-lg mt-4 px-4 py-2">
               INICIA SESION
             </h1>
-            <form onSubmit={handleSubmit} action="">
+            <form onSubmit={handleSubmit}>
               <div className="mb-2 rounder-lg">
                 <label
                   htmlFor="email"

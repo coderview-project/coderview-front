@@ -87,6 +87,7 @@ import RegisterInstructor from '../pages/RegisterInstructor';
 import LoginView from '../pages/LoginView';
 import AdminView from '../pages/AdminView';
 import Contact from '../pages/Contact';
+import LoggedViewTest from '../pages/LoggedViewTest';
 
 const Router = () => {
     return (
@@ -98,6 +99,7 @@ const Router = () => {
                 <Route path='/Login' element={<LoginView />}/>
                 <Route path='/AdminDashboard' element={<AdminView />} /> 
                 <Route path='/Contact' element={<Contact/>} />
+                <Route path='/LoggedViewTest' element={<LoggedViewTest/>} />
             </Routes>
         </BrowserRouter>
     )

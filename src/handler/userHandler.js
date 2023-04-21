@@ -28,13 +28,6 @@ export const userHandler = {
         }
         return userService.postInstructor(newUserRequestModel);
     },
-    async loginUser(loginU) {
-         let loginRequestModel = {
-            "userName": loginU.userName,
-            "userPassword": loginU.userPassword
-         }
-         return userService.loginUser(loginRequestModel);
-    },
     async loadUser() {
         var result = await  userService.getUser();
         return result; 
