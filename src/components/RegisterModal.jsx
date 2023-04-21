@@ -110,7 +110,7 @@ export default function RegisterModal() {
                       </ul>
                     </div>
                   )}
-                  {/* Botones de "Guardar" y "Cerrar" */}
+                 
                   <div className="flex justify-end">
                     <button
                       className="bg-grey text-white active:bg-grey font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-2"
