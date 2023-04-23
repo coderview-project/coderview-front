@@ -1,31 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import Navbar from '../components/Navbar';
-import Footer from '../assets/components/Footer';
-
-function App() {
-
-    return (
-
-        <div>
-            <Navbar />
-       <div><img 
-        src="src/assets/images/social-media.jpg" 
-        alt="Imagen-Home"
-        className="img-home" />
-        <div></div>
-       </div>
-            <Footer />
-        </div>
-
-    )
-}
-
-export default App
-
-
-
-=======
 
 function HomeView() {
 
@@ -33,7 +6,7 @@ function HomeView() {
         <>
             <div>
                 <div>
-                    <img className="bg-top mt-36 h-72 w-full"
+                    <img className="bg-top mt-0 h-72 w-full"
                         src="src\assets\social-media-shorted.jpg"
                         alt="background-home"></img>
                 </div>
@@ -59,4 +32,3 @@ function HomeView() {
     )
 }
 export default HomeView
->>>>>>> feature/registerView
