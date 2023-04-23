@@ -4,36 +4,31 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx}",
   ],
-
   theme: {
-    colors:{
-      'orange': "#FF4700",
-      'black': "#020100",
-      'grey': "#5E574D",
-      'salmon': "#FFA37F",
-      'white': "#FFFFFF",
+    colors: {
+      'orange': '#FF4700',
+      'black': '#020100',
+      'grey': '#5E574D',
+      'salmon': '#FFA37F',
+      'white': '#FFFFFF'
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif'],
       'rubik': ['Rubik', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'fondo': "url('src/components/assets/fondo de pantalla.png')",
+      }
+    },
   },
-  plugins: [],
-}
-
-module.exports = {
-
   plugins: [
-      require('flowbite/plugin')
-  ]
+    '@tailwindcss/forms',
+    '@tailwindcss/aspect-ratio',
 
+  ],
 }
-module.exports = {
 
-  content: [
-      "./node_modules/flowbite/**/*.js"
-  ]
 
-}
+
 

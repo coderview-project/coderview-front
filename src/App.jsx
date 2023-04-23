@@ -1,23 +1,20 @@
-// import { useState } from 'react'
-import './App.css'
-import Footer from './assets/components/Footer'
-import {Assessment} from './components/Assessment'
 import Navb from '../src/components/Navb'
-import  Range  from './components/Range'
+import Footer from './components/Footer'
+import HomeView from './pages/HomeView'
+import React from 'react'
+import './App.css'
 
-import React,{useState} from 'react'
 
 function App() {
   
 
   return (
-    <div>
-      {/* <Navb />  */}
-      {/* <Assessment />  */}
-     <Range/>
-     
-     
-    </div>
+    
+    <>     
+      <Navb/>
+      <HomeView/>
+      <Footer/>
+    </>  
   )
 }
 

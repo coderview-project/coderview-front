@@ -1,25 +1,33 @@
-import { userService } from '../services/userService';
+import { userService } from "../service/userService";
 
 export const userHandler = {
     postUser(newUser) {
         if (!newUser) {
             return;
         }
-       
 
         let newUserRequestModel = {
-                "userData": {
-                    "name": newUser.name,
-                    "lastName":newUser.lastName,
-                    "email": newUser.email,
-                    "password": newUser.password,
-                }  
+            "userName": newUser.userName,
+            "lastName":newUser.lastName,
+            "email": newUser.email,
+            "password": newUser.password,
         }
 
         return userService.postUser(newUserRequestModel);
-
     },
+    async postInstructor(newInstructor) {
+        if(!newInstructor) {
+            return;
+        }
 
+        let newUserRequestModel = {
+            "userName": newInstructor.userName,
+            "lastName":newInstructor.lastName,
+            "email": newInstructor.email,
+            "password": newInstructor.password,
+        }
+        return userService.postInstructor(newUserRequestModel);
+    },
     async loadUser() {
         var result = await  userService.getUser();
         return result; 
@@ -41,12 +49,10 @@ export const userHandler = {
 
         let updatedUserRequestModel = {
             "userData": {
-                "fullName": newUser.fullName,
+                "userName": newUser.userName,
+                "lastName": newUser.lastName,
                 "email": newUser.email,
                 "password": newUser.password,
-                "age": newUser.age,
-                "shippingAddress": newUser.shippingAddress,
-                "phoneNumber": newUser.phoneNumber,
             }, 
             "fileData": {
                 "fileName": newUser.fullName + "-Photo",

@@ -1,0 +1,20 @@
+@media (max-width: 640px) {
+    .Name
+    {
+        background-color:orange;
+    }
+
+    .Buttons-bootcamp{
+        flex-direction: column;
+    }
+
+    .Edit{
+        margin-right: em !important ;
+    }
+
+    .Photo{
+        flex-direction: column;
+    }
+
+
+  }
