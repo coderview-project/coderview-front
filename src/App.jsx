@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import AdminView from './pages/AdminView'
+import AdminBootcampView from './pages/AdminBootcampView'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +10,7 @@ function App() {
     <div>
       
       {/*<AdminBootcampView />*/}
-      <AdminView />
+      <AdminBootcampView />
 
     </div>
   )
