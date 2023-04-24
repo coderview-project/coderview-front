@@ -38,9 +38,9 @@ export default function RegisterModal() {
       </button>
       {showModal ? (
         <>
-          <div className="fixed inset-0 z-50 flex items-center justify-center">
-            <div className="relative w-full max-w-md mx-auto">
-              <div className="bg-white rounded-md shadow-lg p-6">
+          <div className="fixed inset-0 z-50 flex items-center justify-center ">
+            <div className="relative w-full max-w-md mx-auto ">
+              <div className="bg-salmon rounded-md shadow-lg p-6">
                 <h1 className="text-2xl font-semibold mb-4">
                   Agregar Bootcamp
                 </h1>
@@ -89,17 +89,15 @@ export default function RegisterModal() {
                     onChange={handleChange}
                     className="w-full border-grey rounded-md px-4 py-2 mb-4"
                   />
-                  {/* Botón de "Agregar Coder" */}
                   <div className="flex justify-end mb-4">
                   <button
-                      className="bg-salmon text-white active:bg- font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-2"
+                      className="bg-grey text-white active:bg- font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-2"
                       type="button"
                       onClick={handleAgregarCoder}
                     >
                       Agregar Coder
                     </button>
                   </div>
-                  {/* Lista de coders agregados */}
                   {bootcamp.coders.length > 0 && (
                     <div className="mb-4">
                       <h3 className="text-lg font-semibold mb-2">Coders Agregados:</h3>
@@ -113,13 +111,13 @@ export default function RegisterModal() {
                  
                   <div className="flex justify-end">
                     <button
-                      className="bg-grey text-white active:bg-grey font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-2"
+                      className="bg-grey text-white active:bg-orange font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-2"
                       type="submit"
                     >
                       Guardar
                     </button>
                     <button
-                      className="bg-grey text-white active:bg-grey font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none"
+                      className="bg-grey text-white active:bg-orange font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none"
                       type="button"
                       onClick={() => setShowModal(false)}
                     >
@@ -131,7 +129,7 @@ export default function RegisterModal() {
             </div>
           </div>
           <div
-            className="fixed inset-0 bg-gray-900 opacity-75"
+            className="fixed inset-0 bg-grey opacity-30"
             onClick={() => setShowModal(false)}
           ></div>
         </>
