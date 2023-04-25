@@ -27,7 +27,8 @@ function Range(){
     return(
     <div className="body"> 
         <div className="range-slider">          
-            <input onChange={customRangerSlider} type="range" min={0} max={6}  value={sliderValue} className= "slider"/>              
+            <input onChange={customRangerSlider} type="range" min={0} max={6}  value={sliderValue} className= "slider"/> 
+            <img className="rangeimg" src={Garden} alt=""/>             
                 <div className="slider-thumb">                      
                     <div className="tooltip">
                         <div className="tooltip-img">
@@ -38,7 +39,7 @@ function Range(){
                     </div>                    
                 </div>  
                     <div className="progress" >
-                    <img className="rangeimg" src={Garden} alt=""/>
+                   
 
                     </div>
                     

@@ -121,7 +121,7 @@
 } 
 
 .rangeimg{
-    position: relative;
-    
+    position: absolute;
+    margin-top: -52px;
     
 }
