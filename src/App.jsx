@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import AdminBootcampView from './pages/AdminBootcampView'
+//import AdminBootcampView from './pages/AdminBootcampView;
+import AdminView from './pages/AdminView'
 
 
 function App() {
@@ -8,9 +9,9 @@ function App() {
 
   return (
     <div>
-      
+      <AdminView />
       {/*<AdminBootcampView />*/}
-      <AdminBootcampView />
+      {/*<AdminBootcampView />*/}
 
     </div>
   )
