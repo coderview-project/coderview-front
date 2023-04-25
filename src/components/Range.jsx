@@ -4,24 +4,44 @@ import { useForm } from "react-hook-form";
 
 function Range(){
     
-    const [data,setData] = useState(0)
-    const [emoji,setEmoji] = useState('')
-   
-    useEffect(()=>{
-        if(data == 0){setEmoji("😮")}else if(data == 1){setEmoji("😔")}else if(data == 2){     setEmoji("😐")}else if(data == 3){setEmoji("🙂")}else if(data == 4){setEmoji("😉")
-        }else if(data == 5){setEmoji("😁")}else if(data == 6){setEmoji("🤩")}else if(data == 7){   setEmoji("😎")}
-    },[data])
-    return(
-        <form>
-        <div className='p-30 '>
-            <h1 className='text-7xl  p-5'>{emoji}</h1>
-            <input className={data>50?'heigh':'less' } type="range" min="0" max="7" step="1" value={data} onChange={(e)=>setData(e.target.value)} />
-            <h1 className='text-2xl px-7'>{data}</h1>
+   const [sliderValue, setSliderValue] = useState(0);
+    const tooltip = document.querySelector('.tooltip');
+    const p = document.querySelector('.tooltip p');
+    const progress = document.querySelector('.progress');
 
-        </div>
+    // slider.addEventListener('input', customRangerSlider);
+            
+    function customRangerSlider(event) {
+        let sliderElement = event.target.parentElement;
+        let slider = sliderElement.querySelector(".slider");
+        let sliderThumb = sliderElement.querySelector('.slider-thumb');
         
-        <button className='px-7 p-5 border-black' type="submit">Enviar</button>
-        </form>
+        let progressElement = sliderElement.querySelector(".progress");
+        const value = (slider.value/slider.max) * 100;
+        console.log(value);
+        progressElement.style.width = value;
+        sliderThumb.style.cssText = `left: ${value}%; transform:translate(-${value}%, -50%);`
+        setSliderValue(Math.round((value / 100) * 6));             
+    }
+
+    return(
+    <div className="body"> 
+        <div className="range-slider">  
+            <input onChange={customRangerSlider} type="range" min={0} max={6}  value={3} className= "slider"/>              
+                <div className="slider-thumb">                      
+                    <div className="tooltip">
+                        <div className="tooltip-img">
+                            <img 
+                            src="WateringCan.png" alt="" />
+                        </div>
+                        <p>{sliderValue}</p>
+                    </div>
+                </div>  
+                    <div className="progress">
+                        <img className="rangeimg" src="Opción2v2.png" alt=""/>
+                    </div>
+        </div>
+    </div>   
     
     );
     

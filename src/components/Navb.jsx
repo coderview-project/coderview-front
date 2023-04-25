@@ -8,7 +8,7 @@ export default () => {
     // Replace javascript:void(0) paths with your paths
     const navigation = [
         { title: "HOME", path: "/" },
-        { title: "MI PERFIL", path: "/Register" },
+        { title: "MI PERFIL", path: "/" },
         { title: "SOBRE CODERVIEW", path: "javascript:void(0)" },
         { title: "CONTACTO", path: "/Contact" }
     ]
@@ -22,7 +22,7 @@ export default () => {
                             src="CodeF5.png"
                             width={120}
                             height={50}
-                            alt="Float UI logo"
+                            alt="Logo CodeRView"
                         />
                     </a>
                     <div className="md:hidden">
