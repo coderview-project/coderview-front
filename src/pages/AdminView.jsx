@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import "../Style/adminview.css";
+import RegisterModal from '../components/RegisterModal';
 
 function AdminView() {
-
+    const [showModal, setShowModal] = useState (false);
+    const handleClose = () => setShowModal (false);
+    const handleShow = () => setShowModal (true);
     return (
 
         <div>
-
+            { showModal ?  <RegisterModal showModal={showModal} handleClose={handleClose} /> : null }
             <div className="Name bg-cover bg-top h-22 bg-orange object-fit"> <p className="text-white text-left text-3xl font-poppins px-4 py-7"> Lidia García </p>
             </div>
 
             <div className="flex flex-col">
                 <div className="Buttons-bootcamp flex justify-center float-right md:mt-6 ml-10 mt-6 text-xl font-poppins text-center">
 
-                    <button type="button" className="Create flex flex-center"><img className="h-12 w-12 mt-1 md: mb-4" src="src\assets\icon _plus circle_.png" alt="create-bootcamp"></img><p className="py-4 px-2">Crear Bootcamp</p></button>
+                    <button type="button" onClick={ handleShow} className="Create flex flex-center"><img className="h-12 w-12 mt-1 md: mb-4" src="src\assets\icon _plus circle_.png" alt="create-bootcamp"></img><p className="py-4 px-2">Crear Bootcamp</p></button> 
 
                     <button type="button" className="Edit flex flex-center md:mx-10"><img className="h-12 w-12 mt-1 md: mb-4" src="src\assets\icon _gear_.png" alt="edit-bootcamp"></img><p className="py-4 px-2">Editar Bootcamp</p></button>
 
