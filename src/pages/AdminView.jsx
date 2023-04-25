@@ -25,20 +25,20 @@ function AdminView() {
                 <div className="Photo flex justify-center flex-cols-2 font-poppins">
 
                     <div className="flex flex-col text-center">
-                        <div className="w-40 h-40 mb-8 ml-8 md:w-80 md:h-80 ">
+                        <div className="w-40 h-40 mb-8 ml-16 md:w-80 md:h-80">
                             <img className="object-cover relative my-12 inset-x-8 " src="src\assets\admin-photo.png" alt="admin-photo"></img>
                         </div>
 
-                        <button type="button" className="flex items-center bg-orange w-56 h-22 my-10 mx-28 p-2 rounded-3xl md: m-2"><img className="px-2 py-1" src="src\assets\icon _pencil_.png" alt="edit-profile" />Editar perfil personal</button>
+                        <button type="button" className="flex items-center bg-orange w-56 h-22 mt-10 ml-16 md:my-10 md:mx-28 p-2 rounded-3xl md: m-2"><img className="px-2 py-1" src="src\assets\icon _pencil_.png" alt="edit-profile" />Editar perfil personal</button>
 
                     </div>
 
                     <div className="Bootcamps mt-14 font-poppins">
-                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-26 my-10 mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Femcoders Sevilla</button>
+                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-26 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Femcoders Sevilla</button>
 
-                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-22 my-10 mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Femcoders Barcelona</button>
+                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-22 my-10 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Femcoders Barcelona</button>
 
-                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-22 my-10 mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Front-end Asturias</button>
+                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-22 ml-8 mb-10 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Front-end Asturias</button>
 
                     </div>
 
