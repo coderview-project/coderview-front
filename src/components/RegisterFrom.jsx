@@ -55,11 +55,11 @@ function RegisterForm() {
             </div>
             <div className='flex justify-between mt-3 w-full'>
               <label className='font-poppins font-bold mr-4 text-md'> Apellido: </label>
-              <input className='rounded-md py-1' type='text' placeholder='Apellido' onChange={handleLastNameChange} focus='true' required />
+              <input className='rounded-md py-1' type='text' placeholder='Apellido' onChange={handleLastNameChange} focus='true' required/>
             </div>
             <div className='flex justify-between mt-3 w-full' >
               <label className='font-poppins font-bold mr-4 text-md'> Email: </label>
-              <input className='rounded-md py-1 ' type='text' placeholder='Email' onChange={handleEmailChange} focus='true' required />
+              <input className='rounded-md py-1 ' type='text' placeholder='Email' onChange={handleEmailChange} focus='true' required/>
             </div>
             <div className='flex justify-between mt-3 w-full'>
               <label className='font-poppins font-bold mr-4 text-md'> Contraseña: </label>
