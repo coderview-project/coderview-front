@@ -1,13 +1,13 @@
 import '../Style/Range.css'
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import WateringCan from "../assets/WateringCan.png"
+import Garden from "../assets/Garden.png"
 
 function Range(){
     
-   const [sliderValue, setSliderValue] = useState(0);
-    const tooltip = document.querySelector('.tooltip');
-    const p = document.querySelector('.tooltip p');
-    const progress = document.querySelector('.progress');
+   const [sliderValue, setSliderValue] = useState(3);
+   
 
     // slider.addEventListener('input', customRangerSlider);
             
@@ -26,20 +26,22 @@ function Range(){
 
     return(
     <div className="body"> 
-        <div className="range-slider">  
-            <input onChange={customRangerSlider} type="range" min={0} max={6}  value={3} className= "slider"/>              
+        <div className="range-slider">          
+            <input onChange={customRangerSlider} type="range" min={0} max={6}  value={sliderValue} className= "slider"/>              
                 <div className="slider-thumb">                      
                     <div className="tooltip">
                         <div className="tooltip-img">
                             <img 
-                            src="WateringCan.png" alt="" />
+                            src={WateringCan} alt="" />
                         </div>
                         <p>{sliderValue}</p>
-                    </div>
+                    </div>                    
                 </div>  
-                    <div className="progress">
-                        <img className="rangeimg" src="Opción2v2.png" alt=""/>
+                    <div className="progress" >
+                    <img className="rangeimg" src={Garden} alt=""/>
+
                     </div>
+                    
         </div>
     </div>   
     
