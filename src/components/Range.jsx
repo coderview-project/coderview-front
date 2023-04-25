@@ -7,10 +7,7 @@ import Garden from "../assets/Garden.png"
 function Range(){
     
    const [sliderValue, setSliderValue] = useState(3);
-   
-
-    // slider.addEventListener('input', customRangerSlider);
-            
+              
     function customRangerSlider(event) {
         let sliderElement = event.target.parentElement;
         let slider = sliderElement.querySelector(".slider");
@@ -39,15 +36,10 @@ function Range(){
                     </div>                    
                 </div>  
                     <div className="progress" >
-                   
-
-                    </div>
-                    
+                   </div>                    
         </div>
-    </div>   
-    
-    );
-    
+    </div> 
+    );  
 }
 
 export default Range;
