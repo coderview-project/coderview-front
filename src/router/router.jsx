@@ -81,8 +81,8 @@ import {
     Route
 } from "react-router-dom";
 import App from '../App';
-import RegisterCoder from '../pages/RegisterCoder'
-import HomeView from '../pages/HomeView';
+import RegisterCoder from '../pages/RegisterCoder';
+import UserView from '../pages/UserView';
 import RegisterInstructor from '../pages/RegisterInstructor';
 import LoginView from '../pages/LoginView';
 import AdminView from '../pages/AdminView';
@@ -100,6 +100,7 @@ const Router = () => {
                 <Route path='/AdminDashboard' element={<AdminView />} /> 
                 <Route path='/Contact' element={<Contact/>} />
                 <Route path='/LoggedViewTest' element={<LoggedViewTest/>} />
+                <Route path='/UserDashboard' element={<UserView/>} />
             </Routes>
         </BrowserRouter>
     )
