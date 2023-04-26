@@ -65,20 +65,6 @@ function RegisterForm() {
               <label className='font-poppins font-bold mr-4 text-md'> Contraseña: </label>
               <input className='rounded-md py-1' type='password' placeholder='Contraseña' onChange={handlePasswordChange} focus='true' required />
             </div>
-            {/* <div id="userRol-group" className='flex justify-center w-full mt-3 font-poppins font-bold'>¿Eres formador/a o coder?</div>
-              <div role="group" aria-labelledby="my-radio-group">
-                <div className='flex justify-around' > 
-                <label>
-                  <input type="radio" name="userRol" value="2" className='mr-3' onChange={handleUserRolIdChange}
-                   />
-                    Formador
-                </label>
-                <label>
-                  <input type="radio" name="userRol" value="3" className='mr-3' onChange={handleUserRolIdChange} />
-                    Coder
-                </label>
-                </div>
-                </div> */}
           </div>
           <div className="w-full flex justify-center mt-4">
             <button
