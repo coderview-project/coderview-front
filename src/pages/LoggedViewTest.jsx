@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import AdminView from "./AdminView";
+import LoggedNavb from "../components/LoggedNavb";
 
 function LoggedViewTest() {
     const isLogged = JSON.parse(localStorage.getItem('userData'));
@@ -11,18 +12,16 @@ function LoggedViewTest() {
         navigate("/");
     }
 
-    // const userRol = userData.filter((rol) => rol.userItem.userIdRol);
-
     return (
         <>
-            <div className='flex justify-center uppercase'>
+            <button className="w-24 p-3 bg-orange" onClick={handleLogout}> LOG OUT </button>
                 {isLogged  && userRol === 3 ? 
                   <h1> Vista loggeada usuario </h1>
-                : isLogged && userRol === 2 ? <h1> Vista loggeada formador </h1>  
-                : <h1> Vista administrador </h1> 
+                : isLogged && userRol === 2 ? <> <LoggedNavb/> <AdminView/> </>
+                : isLogged && userRol === 1? <h1> Vista administrador </h1> 
+                : <h1> Por favor, inicie sesión </h1>
                 }
-            </div>
-            <button className="w-24 p-3 bg-orange" onClick={handleLogout}> LOG OUT </button>
+            
         </>
     )
 }
