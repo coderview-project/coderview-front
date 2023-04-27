@@ -1,19 +1,43 @@
 import React, { useState } from "react";
+import { bootcampHandler } from "../handler/bootcampHandler";
 
 export default function RegisterModal({showModal, handleClose}) {
   console.log (showModal)
     //const [showModal, setShowModal] = useState(false);
-  const [bootcamp, setBootcamp] = useState({
-    bName: "",
-    startDate: "",
-    endDate: ""
-    // coders: []
-  });
+  // const [bootcamp, setBootcamp] = useState({
+  //   title: "",
+  //   creatorId: null,
+  //   startDate: "",
+  //   endDate: ""
+  //   // coders: []
+  // });
 
-  const handleChange = (e) => {
-    const { bName, value } = e.target;
-    setBootcamp({ ...bootcamp, [bName]: value });
+  const [title, setTitle] = useState('');
+  const [creatorId, setCreatorId] = useState(null);
+  const [startDate, setStartDate] = useState(); 
+  const [endDate, setEndDate] = useState(); 
+
+  const handleTitleChange = (event) => {
+    let titleInput = event.target.value;
+    setTitle(titleInput);
   };
+  const handleCreatorIdChange = (event) => {
+    let creatorIdInput = event.target.value; 
+    setCreatorId(creatorIdInput);
+  }
+  const handleStartDateChange = (event) => {
+    let startDateInput = event.target.value; 
+    setStartDate(startDateInput); 
+  }
+  const handleEndDateChange = (event) => {
+    let endDateInput = event.target.value; 
+    setEndDate(endDateInput);
+  }
+
+  // const handleChange = (e) => {
+  //   const { , value } = e.target;
+  //   setBootcamp({ ...bootcamp, [bName]: value });
+  // };
 
   // const handleAgregarCoder = () => {
   //   if (bootcamp.codigo) {
@@ -22,13 +46,18 @@ export default function RegisterModal({showModal, handleClose}) {
   //   }
   // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let newBootcamp = { bName, creatorId, startDate, endDate };
-    bootcampHandler.postBootcamp(newBootcamp);
-    resetForm();
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    let bootcamp = { title, creatorId, startDate, endDate };
     console.log("Datos del formulario:", bootcamp);
+    bootcampHandler.postBootcamp(bootcamp);
+    // resetForm();
+    
   };
+
+  // const resetForm = () => {
+  //   document.getElementById('registerForm').reset();
+  // }
 
   return (
     <>
@@ -47,8 +76,7 @@ export default function RegisterModal({showModal, handleClose}) {
                     type="text"
                     id="nombre"
                     name="nombre"
-                    value={bootcamp.bName}
-                    onChange={handleChange}
+                    onChange={handleTitleChange}
                     className="w-full border-grey rounded-md px-4 py-2 mb-4"
                   />
                   <label htmlFor="bName" className="block mb-2">
@@ -58,8 +86,7 @@ export default function RegisterModal({showModal, handleClose}) {
                     type="text"
                     id="nombre"
                     name="nombre"
-                    value={bootcamp.creatorId}
-                    onChange={handleChange}
+                    onChange={handleCreatorIdChange}
                     className="w-full border-grey rounded-md px-4 py-2 mb-4"
                   />
                   <label htmlFor="fechaInicio" className="block mb-2">
@@ -69,8 +96,7 @@ export default function RegisterModal({showModal, handleClose}) {
                     type="date"
                     id="startDate"
                     name="startDate"
-                    value={bootcamp.startDate}
-                    onChange={handleChange}
+                    onChange={handleStartDateChange}
                     className="w-full border-grey rounded-md px-4 py-2 mb-4"
                   />
                   <label htmlFor="fechaTermino" className="block mb-2">
@@ -80,8 +106,7 @@ export default function RegisterModal({showModal, handleClose}) {
                     type="date"
                     id="endDate"
                     name="endDate"
-                    value={bootcamp.endDate}
-                    onChange={handleChange}
+                    onChange={handleEndDateChange}
                     className="w-full border-grey rounded-md px-4 py-2 mb-4"
                   />
                   {/* <label htmlFor="codigo" className="block mb-2">
@@ -125,7 +150,7 @@ export default function RegisterModal({showModal, handleClose}) {
                     <button
                       className="bg-grey text-white active:bg-orange font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none"
                       type="button"
-                      onClick={handleClose }
+                      onClick={handleClose}
                     >
                       Cerrar
                     </button>

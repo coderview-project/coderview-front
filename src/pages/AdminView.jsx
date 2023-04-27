@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useLoaderData } from 'react-router-dom';
+import LoggedNavb from '../components/LoggedNavb';
 import Footer from '../components/Footer';
 import "../Style/adminview.css";
 import RegisterModal from '../components/RegisterModal';
 import { userHandler } from '../handler/userHandler';
 
-function AdminView({user}) {
+function AdminView({user, bootcamp}) {
     console.log(user)
+    console.log(bootcamp)
     const [showModal, setShowModal] = useState (false);
     const handleClose = () => setShowModal (false);
     const handleShow = () => setShowModal (true);
 
+    // {user[0].userName} & Id de formador: {user[0].id} 
     return (
         <>
+        <LoggedNavb/>
         <div>
             { showModal ?  <RegisterModal showModal={showModal} handleClose={handleClose} /> : null }
-            <div className="Name bg-cover bg-top h-22 bg-orange object-fit"> <p className="text-white text-left text-3xl font-poppins px-4 py-7"> {user[0].userName} & Id de formador: {user[0].id}  </p>
+            <div className="Name bg-cover bg-top h-22 bg-orange object-fit"> <p className="text-white text-left text-3xl font-poppins px-4 py-7"> Bienvenido {user[0]?.userName}. Tu Id de formador es: {user[0]?.id} </p>
             </div>
 
             <div className="flex flex-col">
@@ -41,7 +44,7 @@ function AdminView({user}) {
                     </div>
 
                     <div className="Bootcamps mt-14 font-poppins">
-                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-26 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Femcoders Sevilla</button>
+                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-26 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />{bootcamp.title}</button>
 
                         <button type="button" className="flex items-center uppercase bg-salmon w-72 h-22 my-10 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Femcoders Barcelona</button>
 

@@ -6,7 +6,7 @@ import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 const LoggedNavb =() => {
     let Links =[
         {name:"HOME", link:"/"},
-        {name:"MI PERFIL", link:"/"},
+        {name: "MI PERFIL", link:"/LoggedViewTest"},
         {name:"SOBRE CODERVIEW", link:"/"},
         {name:"CONTACTO", link:"/Contact"},
     ];

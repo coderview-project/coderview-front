@@ -1,18 +1,21 @@
 import { bootcampService } from "../service/bootcampService";
 
 export const bootcampHandler = {
-    postBootcamp() {
-        if (!newBootcamp) {
+    postBootcamp(bootcamp) {
+        if (!bootcamp) {
             return;
         }
 
         let newBootcamp = {
-            "title":newBootcamp.title,
-            "creatorId": newBootcamp.creatorId,
-            "startDate": newBootcamp.startDate,
-            "endDate": newBootcamp.endDate
+            "title":bootcamp.title,
+            "creatorId": bootcamp.creatorId,
+            "startDate": bootcamp.startDate,
+            "endDate": bootcamp.endDate
         }
 
         return bootcampService.postBootcamp(newBootcamp);
-    }
+    },
+    loadBootcamps() {
+        return bootcampService.getBootcamp();
+    },
 }

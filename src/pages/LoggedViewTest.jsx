@@ -18,6 +18,7 @@ function LoggedViewTest() {
     }
 
     const [user, setUser] = useState([]);
+    const [bootcamp, setBootcamp] = useState([]);
     
     useEffect(() => {
         async function fetchUser() {
@@ -25,15 +26,22 @@ function LoggedViewTest() {
           console.log(userData)
           setUser(userData);
         }
+        async function fetchBootcamp() {
+          const bootcampData = await bootcampHandler.loadBootcamps(bootcamp);
+          setBootcamp(bootcampData)
+        }
+
         fetchUser();
+        fetchBootcamp();
       }, []);
    
     return (
         <>
-            <button className="w-24 p-3 bg-orange" onClick={handleLogout}> LOG OUT </button>
+            {/* <button className="w-24 p-3 bg-orange" onClick={handleLogout}> LOG OUT </button> */}
+            <div className="mt-20"> </div>
                 {isLogged  && userRol === 3 ? 
                   <> <LoggedNavb/> <UserView/> </> 
-                : isLogged && userRol === 2 ?  <AdminView user={user}/> 
+                : isLogged && userRol === 2 ?  <AdminView user={user} bootcamp={bootcamp}/> 
                 : isLogged && userRol === 1? <h1> Vista administrador </h1> 
                 : <h1> Por favor, inicie sesión </h1>
                 }
