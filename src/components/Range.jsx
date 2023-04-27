@@ -4,9 +4,10 @@ import { useForm } from "react-hook-form";
 import WateringCan from "../assets/WateringCan.png"
 import Garden from "../assets/Garden.png"
 
-function Range(){
-    
-   const [sliderValue, setSliderValue] = useState(3);
+function Range({formData, setFormData, question}){
+
+    const [sliderValue, setSliderValue] = useState(`${formData[question]}`);
+
               
     function customRangerSlider(event) {
         let sliderElement = event.target.parentElement;
@@ -18,7 +19,8 @@ function Range(){
         console.log(value);
         progressElement.style.width = value;
         sliderThumb.style.cssText = `left: ${value}%; transform:translate(-${value}%, -50%);`
-        setSliderValue(Math.round((value / 100) * 6));             
+        setSliderValue(Math.round((value / 100) * 6));
+        setFormData({...formData, projectQ : (Math.round((value / 100) * 6))});             
     }
 
     return(

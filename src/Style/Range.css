@@ -72,13 +72,15 @@
     top: calc(-170px );
     left:50%;
     transform: translate(-50%);
-    width: 170px;
+    width: 210px;
     height: 8.75rem;
     background-color: none;  
     text-align: center;
     color: black;
     font-size: large;
     font-weight: 500;
+    margin-top: 0 auto;
+    
     
 }
 
@@ -100,6 +102,8 @@
     height: 70%;
     overflow: hidden;
     object-fit: contain; 
+    padding-left: 50px;
+    margin-top: 4px;
     
     
 }

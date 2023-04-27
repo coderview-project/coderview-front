@@ -4,7 +4,8 @@ import HomeView from './pages/HomeView'
 import React from 'react'
 import './App.css'
 import Range from './components/Range'
-
+import Form from './components/Form'
+import ProjectManagement from './components/ProjectManagement'
 
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
     
     <>     
       {/* <Navb/> */}
-      <Range />
+      <Form />
+
+      {/* <Range /> */}
       {/* <HomeView/> */}
       {/* <Footer/> */}
     </>  
