@@ -89,6 +89,7 @@ import AdminView from '../pages/AdminView';
 import Contact from '../pages/Contact';
 import LoggedViewTest from '../pages/LoggedViewTest';
 import { userHandler } from '../handler/userHandler';
+import Form from '../components/Form';
 
 const Router = () => {
     return (

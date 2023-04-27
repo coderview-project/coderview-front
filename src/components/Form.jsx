@@ -1,8 +1,8 @@
 import {useState} from 'react'
 import ProjectManagement from './ProjectManagement';
 import FunctionalTechnical from './FunctionalTechnical';
-import FrontEnd from './FrontEnd';
-import ProgressBar from "@ramonak/react-progress-bar";
+import FrontEnd from './FrontEnd'
+
 function Form() {
  
     const [page, setPage] = useState(0);
