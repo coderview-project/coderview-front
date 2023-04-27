@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import Footer from "./Footer";
-import {UserContext} from '../context/UserContext';
 import { loginService } from "../service/loginService";
 import { useNavigate } from "react-router-dom";
 

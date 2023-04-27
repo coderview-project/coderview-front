@@ -1,24 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import LoggedNavb from '../components/LoggedNavb';
 import Footer from '../components/Footer';
 import "../Style/adminview.css";
 import RegisterModal from '../components/RegisterModal';
-import { userHandler } from '../handler/userHandler';
 
-function AdminView({user, bootcamp}) {
+
+function AdminView({user}) {
     console.log(user)
-    console.log(bootcamp)
     const [showModal, setShowModal] = useState (false);
     const handleClose = () => setShowModal (false);
     const handleShow = () => setShowModal (true);
 
-    // {user[0].userName} & Id de formador: {user[0].id} 
     return (
         <>
         <LoggedNavb/>
         <div>
             { showModal ?  <RegisterModal showModal={showModal} handleClose={handleClose} /> : null }
-            <div className="Name bg-cover bg-top h-22 bg-orange object-fit"> <p className="text-white text-left text-3xl font-poppins px-4 py-7"> Bienvenido {user[0]?.userName}. Tu Id de formador es: {user[0]?.id} </p>
+            <div className="Name bg-cover bg-top h-22 bg-orange object-fit"> <p className="text-white text-left text-3xl font-poppins px-4 py-7"> Bienvenid@ {user[0]?.userName}. Tu Id de formador es: {user[0]?.id} </p>
             </div>
 
             <div className="flex flex-col">

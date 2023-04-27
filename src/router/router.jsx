@@ -96,13 +96,13 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<App />} />
-                <Route path='/Register' element={<RegisterCoder />} />
+                <Route path='/Register' element={<RegisterCoder/>} />
                 <Route path='/RegisterInstructor' element={<RegisterInstructor/>} />
                 <Route path='/Login' element={<LoginView />}/>
-                <Route path='/AdminDashboard' element={<AdminView />} loader={fetchUser} /> 
+                <Route path='/AdminDashboard' element={<AdminView/>} loader={fetchUser} /> 
                 <Route path='/Contact' element={<Contact/>} />
                 <Route path='/LoggedViewTest' element={<LoggedViewTest/>} loader={fetchUser} />
-                <Route path='/UserDashboard' element={<UserView/>} />
+                <Route path='/UserDashboard' element={<UserView/>}/>
                 <Route path='/Evaluation' element={<Form/>}/>
             </Routes>
         </BrowserRouter>
