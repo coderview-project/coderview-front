@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function User() {
   return (
     <>
@@ -38,7 +39,7 @@ function User() {
               <div className="flex flex-wrap justify-center">
                 {/* Botones de Evaluaciones */}
                 <div className="flex m-4 p-4 rounded-2xl bg-white text-center justify-center w-48">
-                  <button className="text-black text-lg">1º EVALUACIÓN</button>
+                  <button className="text-black text-lg" onClick={navigate("/Evaluation")}>1º EVALUACIÓN</button>
                 </div>
                 <div className="flex m-4 p-4 text-lg rounded-2xl bg-white text-center justify-center w-48">
                   <button className="text-black">2º EVALUACIÓN</button>

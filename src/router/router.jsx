@@ -102,6 +102,7 @@ const Router = () => {
                 <Route path='/Contact' element={<Contact/>} />
                 <Route path='/LoggedViewTest' element={<LoggedViewTest/>} loader={fetchUser} />
                 <Route path='/UserDashboard' element={<UserView/>} />
+                <Route path='/Evaluation' element={<Form/>}/>
             </Routes>
         </BrowserRouter>
     )
