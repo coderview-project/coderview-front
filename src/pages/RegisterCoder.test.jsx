@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Register from '../pages/Register';
+import RegisterCoder from './RegisterCoder';
 import '@testing-library/jest-dom';
 
 
 test('should contain a image element', () => { 
-  render(<Register />); 
+  render(<RegisterCoder />); 
   screen.debug()
   const ImageElement = screen.getByAltText(/header/i); 
   expect(ImageElement).toBeInTheDocument(); 
