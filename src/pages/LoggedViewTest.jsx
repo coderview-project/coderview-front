@@ -12,10 +12,10 @@ function LoggedViewTest() {
     const userId = isLogged.item3;
     console.log(userRol)
     const navigate = useNavigate();
-    const handleLogout = () => {
-        localStorage.clear();
-        navigate("/");
-    }
+    // const handleLogout = () => {
+    //     localStorage.clear();
+    //     navigate("/");
+    // }
 
     const [user, setUser] = useState([]);
     const [bootcamp, setBootcamp] = useState([]);
@@ -28,7 +28,7 @@ function LoggedViewTest() {
         }
         async function fetchBootcamp() {
           const bootcampData = await bootcampHandler.loadBootcamps(bootcamp);
-          setBootcamp(bootcampData)
+          setBootcamp(bootcampData);
         }
 
         fetchUser();

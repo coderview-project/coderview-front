@@ -48,9 +48,9 @@ export default function RegisterModal({showModal, handleClose}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let bootcamp = { title, creatorId, startDate, endDate };
-    console.log("Datos del formulario:", bootcamp);
-    bootcampHandler.postBootcamp(bootcamp);
+    let newBootcamp = { title, creatorId, startDate, endDate };
+    console.log("Datos del formulario:", newBootcamp);
+    bootcampHandler.postBootcamp(newBootcamp);
     // resetForm();
     
   };

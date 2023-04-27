@@ -1,7 +1,13 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 
 function User() {
+  const navigate = useNavigate(); 
+
+  const handleNavigate = (e) => {
+    e.preventDefault();
+    navigate("/Evaluation");
+  }
   return (
     <>
       <div className="flex bg-orange">
@@ -39,22 +45,22 @@ function User() {
               <div className="flex flex-wrap justify-center">
                 {/* Botones de Evaluaciones */}
                 <div className="flex m-4 p-4 rounded-2xl bg-white text-center justify-center w-48">
-                  <button className="text-black text-lg" onClick={navigate("/Evaluation")}>1º EVALUACIÓN</button>
+                  <button className="text-black text-lg" onClick={handleNavigate}>1º EVALUACIÓN</button>
                 </div>
                 <div className="flex m-4 p-4 text-lg rounded-2xl bg-white text-center justify-center w-48">
-                  <button className="text-black">2º EVALUACIÓN</button>
+                  <button className="text-black" onClick={handleNavigate}>2º EVALUACIÓN</button>
                 </div>
                 <div className="flex m-4 p-4 text-lg  rounded-2xl bg-white text-center justify-center w-48">
-                  <button className="text-black">3º EVALUACIÓN</button>
+                  <button className="text-black" onClick={handleNavigate}>3º EVALUACIÓN</button>
                 </div>
                 <div className="flex m-4 p-4 text-lg rounded-2xl bg-white text-center justify-center w-48">
-                  <button className="text-black">4º EVALUACIÓN</button>
+                  <button className="text-black" onClick={handleNavigate}>4º EVALUACIÓN</button>
                 </div>
                 <div className="flex m-4 p-4 text-lg rounded-2xl bg-white text-center justify-center w-48">
-                  <button className="text-black">CO-EVALUAR</button>
+                  <button className="text-black" onClick={handleNavigate}>CO-EVALUAR</button>
                 </div>
                 <div className="flex m-4 p-4 rounded-2xl bg-orange text-center justify-center w-48">
-                  <button className="text-white ">CONSULTAR EVALUACIONES</button>
+                  <button className="text-white">CONSULTAR EVALUACIONES</button>
                 </div>
               </div>
             </div>

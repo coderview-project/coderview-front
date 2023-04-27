@@ -44,7 +44,7 @@ function AdminView({user, bootcamp}) {
                     </div>
 
                     <div className="Bootcamps mt-14 font-poppins">
-                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-26 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />{bootcamp.title}</button>
+                        <button type="button" className="flex items-center uppercase bg-salmon w-72 h-26 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" /> FullStack Sevilla</button>
 
                         <button type="button" className="flex items-center uppercase bg-salmon w-72 h-22 my-10 ml-8 md:my-10 md:mx-28 p-2 rounded-3xl"><img className="px-2 py-1 uppercase" src="src\assets\icon _pencil_.png" alt="edit-profile" />Femcoders Barcelona</button>
 

@@ -20,7 +20,7 @@ export const bootcampService = {
        
         return allUser;
     },
-    async postBootcamp(newBootcamp) {
+    async postBootcamp(bootcamp) {
         // let options = {
         //     headers: {
         //         'Authorization': "asdasdasd"
@@ -28,14 +28,14 @@ export const bootcampService = {
         // }
         // let response = await apiClient.post("/Bootcamp/PostBootcamp", newBootcamp, options);
 
-        var bootcamp =  {
-            "id": 0,
-            "title": "string",
-            "creatorId": 0,
-            "startDate": "2023-04-27T09:58:56.760Z",
-            "endDate": "2023-04-27T09:58:56.760Z",
-            "isActive": true
-        }
+        // var bootcamp =  {
+        //     "id": 0,
+        //     "title": "string",
+        //     "creatorId": 0,
+        //     "startDate": "2023-04-27T09:58:56.760Z",
+        //     "endDate": "2023-04-27T09:58:56.760Z",
+        //     "isActive": true
+        // }
         let response = await apiClient.post("/Bootcamp/PostBootcamp", bootcamp);
 
         if (response.status === 200) 
