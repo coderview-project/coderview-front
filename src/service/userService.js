@@ -22,7 +22,7 @@ export const userService = {
         return allUser;
     },
     async getUser(id) {
-        let response = await apiClient.get("/" + id);
+        let response = await apiClient.get("/User/GetUserById?id=" + id);
         if (!response == 200)
             throw {
                 status: response.status,
@@ -67,23 +67,6 @@ export const userService = {
          }
 
     },
-    // async loginUser(loginRequestModel) {
-    //     let options= {
-    //         url: 'User/Login',
-    //         method: 'post',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //             // 'Authorization': 
-    //         }
-    //     }
-    //     let response = await apiClient.post("/User/Login", loginRequestModel, options);
-    //     if (response.status === 200) 
-    //      {   
-    //         alert("Usuario validado");  
-    //      } else { 
-    //         alert("Algo salió mal...");
-    //      }
-    // },
     async deleteUser(id) {
         await apiClient.delete("/User/DeactivateUser?id=" + id)
     },

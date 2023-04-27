@@ -88,6 +88,7 @@ import LoginView from '../pages/LoginView';
 import AdminView from '../pages/AdminView';
 import Contact from '../pages/Contact';
 import LoggedViewTest from '../pages/LoggedViewTest';
+import { userHandler } from '../handler/userHandler';
 
 const Router = () => {
     return (
@@ -97,14 +98,18 @@ const Router = () => {
                 <Route path='/Register' element={<RegisterCoder />} />
                 <Route path='/RegisterInstructor' element={<RegisterInstructor/>} />
                 <Route path='/Login' element={<LoginView />}/>
-                <Route path='/AdminDashboard' element={<AdminView />} /> 
+                <Route path='/AdminDashboard' element={<AdminView />} loader={fetchUser} /> 
                 <Route path='/Contact' element={<Contact/>} />
-                <Route path='/LoggedViewTest' element={<LoggedViewTest/>} />
+                <Route path='/LoggedViewTest' element={<LoggedViewTest/>} loader={fetchUser} />
                 <Route path='/UserDashboard' element={<UserView/>} />
             </Routes>
         </BrowserRouter>
     )
 }
 
+async function fetchUser({ params }) {
+    const user = await userHandler.loadUser(params.id);
+    return { user };
+}
 
 export default Router; 
