@@ -81,17 +81,26 @@ import {
     Route
 } from "react-router-dom";
 import App from '../App';
-import Register from '../pages/Register'
-
-
+import RegisterCoder from '../pages/RegisterCoder';
+import UserView from '../pages/UserView';
+import RegisterInstructor from '../pages/RegisterInstructor';
+import LoginView from '../pages/LoginView';
+import AdminView from '../pages/AdminView';
+import Contact from '../pages/Contact';
+import LoggedViewTest from '../pages/LoggedViewTest';
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<App />} />
-                {/* <Route path="/Home" element={<HomeView/>} /> */}
-                <Route path='/Register' element={<Register />} />
+                <Route path='/Register' element={<RegisterCoder />} />
+                <Route path='/RegisterInstructor' element={<RegisterInstructor/>} />
+                <Route path='/Login' element={<LoginView />}/>
+                <Route path='/AdminDashboard' element={<AdminView />} /> 
+                <Route path='/Contact' element={<Contact/>} />
+                <Route path='/LoggedViewTest' element={<LoggedViewTest/>} />
+                <Route path='/UserDashboard' element={<UserView/>} />
             </Routes>
         </BrowserRouter>
     )

@@ -1,16 +1,23 @@
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
-const Navb =() => {
+const LoggedNavb =() => {
     let Links =[
         {name:"HOME", link:"/"},
-        {name:"LOGIN", link:"/Login"},
-        {name:"REGISTRO", link:"/Register"},
+        {name:"MI PERFIL", link:"/"},
         {name:"SOBRE CODERVIEW", link:"/"},
         {name:"CONTACTO", link:"/Contact"},
     ];
 
     let [open,setOpen]=useState(false);
+
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        localStorage.clear();
+        navigate("/");
+    }
 
     return (
     <div className='shadow-md w-full fixed top-0 left-0 '>
@@ -37,12 +44,13 @@ const Navb =() => {
                     </li>
                 ))
             }
-            
+        <button style={{marginLeft: 20}} onClick={handleLogout}>  <LogoutOutlinedIcon/> </button> 
         </ul>
+        
         </div>
     </div>
 
     )
 }
 
-export default Navb
+export default LoggedNavb

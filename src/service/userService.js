@@ -1,56 +1,93 @@
-// import axios from "axios";
+import axios from "axios";
 
+const apiClient = axios.create({
+    baseURL: 'https://localhost:7011',
+    withCredentials: false,
+    headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+          
+    }
+})
 
-// const apiClient = axios.create({
-//     baseURL: 'https://localhost:7181',
-//     withCredentials: false,
-//     headers: {
-//         'Content-Type': 'application/json',
-//         Accept: 'application/json'   
-//     }
-// })
-
-// export const userService = {
-//     async getUser() {
-//         let response = await apiClient.get("/User/GetAllUsers");
-//         if (!response==200)
-//             {
-//                 alert('These are not the users you are looking for');
-//             };
-//         let allUser = response.data;
+export const userService = {
+    async getUser() {
+        let response = await apiClient.get("/User/GetAllUsers");
+        if (!response==200)
+            {
+                alert('No se encontraron usuarios');
+            };
+        let allUser = response.data;
        
-//         return allUser;
-//     },
-//     async getUser(id) {
-//         let response = await apiClient.get("/" + id);
-//         if (!response == 200)
-//             throw {
-//                 status: response.status,
-//                 statusText: "Not found",
-//             };
-//         let user = response.data;
-//         return user;
-//     },
-//     async postUser(newUserRequestModel){
-//         let response = await apiClient.post("/User/PostUser", newUserRequestModel)
-//         if (response.status === 200) 
-//         {   
-//             Swal.fire({ 
-//             icon: 'success', 
-//             title: 'New user registered', 
-//             text: 'Check your inbox for confirmation email!',
-//             showConfirmButton: true, 
-//             showClass: { popup: 'animate__animated animate__fadeInDown' }, 
-//             hideClass: { popup: 'animate__animated animate__fadeOutUp' } })   
-//          } else { 
-//             alert("Algo salió mal...");
-//          }
+        return allUser;
+    },
+    async getUser(id) {
+        let response = await apiClient.get("/" + id);
+        if (!response == 200)
+            throw {
+                status: response.status,
+                statusText: "Not found",
+            };
+        let user = response.data;
+        return user;
+    },
+    async postUser(newUserRequestModel){
+        let options = {
+            url: 'User/PostUser',
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Authorization': 
+            }
+        }
+        let response = await apiClient.post("/User/PostUser", newUserRequestModel, options);
+        if (response.status === 200) 
+         {   
+            alert("Usuario registrado con éxito");  
+         } else { 
+            alert("Algo salió mal...");
+         }
 
-//     },
-//     async deleteUser(id) {
-//         await apiClient.delete("/User/DeactivateUser?id=" + id)
-//     },
-//     async updateUser(id, updatedUserRequestModel){
-//         await apiClient.patch("/User/Patch" + id, updatedUserRequestModel)
-//     }
-// }
+    },
+    async postInstructor(newUserRequestModel) {
+        let options = {
+            url: 'User/PostInstructor',
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Authorization': 
+            }
+        }
+        let response = await apiClient.post("/User/PostInstructor", newUserRequestModel, options);
+        if (response.status === 200) 
+         {   
+            alert("Formador registrado con éxito");  
+         } else { 
+            alert("Algo salió mal...");
+         }
+
+    },
+    // async loginUser(loginRequestModel) {
+    //     let options= {
+    //         url: 'User/Login',
+    //         method: 'post',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             // 'Authorization': 
+    //         }
+    //     }
+    //     let response = await apiClient.post("/User/Login", loginRequestModel, options);
+    //     if (response.status === 200) 
+    //      {   
+    //         alert("Usuario validado");  
+    //      } else { 
+    //         alert("Algo salió mal...");
+    //      }
+    // },
+    async deleteUser(id) {
+        await apiClient.delete("/User/DeactivateUser?id=" + id)
+    },
+    async updateUser(id, updatedUserRequestModel){
+        await apiClient.patch("/User/Patch" + id, updatedUserRequestModel)
+    }
+}
