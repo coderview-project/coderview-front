@@ -16,11 +16,11 @@ function Range({formData, setFormData, question}){
         
         let progressElement = sliderElement.querySelector(".progress");
         const value = (slider.value/slider.max) * 100;
-        console.log(value);
         progressElement.style.width = value;
         sliderThumb.style.cssText = `left: ${value}%; transform:translate(-${value}%, -50%);`
         setSliderValue(Math.round((value / 100) * 6));
-        setFormData({...formData, projectQ : (Math.round((value / 100) * 6))});             
+        setFormData({...formData, projectQ : (Math.round((value / 100) * 6))}); 
+        console.log(sliderValue)            
     }
 
     return(
@@ -35,6 +35,7 @@ function Range({formData, setFormData, question}){
                             src={WateringCan} alt="" />
                         </div>
                         <p>{sliderValue}</p>
+                        
                     </div>                    
                 </div>  
                     <div className="progress" >
