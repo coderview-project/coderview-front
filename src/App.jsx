@@ -15,9 +15,9 @@ function App() {
     
     <>     
       {/* <Navb/> */}
-      <Form />
+      
 
-      {/* <Range /> */}
+      <Range />
       {/* <HomeView/> */}
       {/* <Footer/> */}
     </>  
