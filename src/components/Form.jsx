@@ -54,14 +54,14 @@ function Form() {
             className="h-20"
           />
           <p className="pb-2 text-orange text-xs">Powered by Factoría F5</p>
-          <hr className="border-salmon border-4 w-screen" />
+          <hr className="border-salmon border-4 w-screen"/> 
         </header>
       </div>
 
       <div className="flex flex-col h-screen  bg-gradient-to-t from-salmon ...  p-12 ">
       
         <div
-          className=" flex flex-row justify-center items-center "
+          className=" flex flex-row  "
           id="evaluation"
         >
           <div
