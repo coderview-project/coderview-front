@@ -7,8 +7,8 @@ import { userHandler } from "../handler/userHandler";
 
 function LoggedViewTest() {
     const isLogged = JSON.parse(localStorage.getItem('userData'));
-    const userRol = isLogged.item2;
-    const userId = isLogged.item3;
+  //  const userRol = isLogged.item2;
+  //  const userId = isLogged.item3;
     console.log(userId);
 
     const [user, setUser] = useState([]);
