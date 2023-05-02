@@ -6,7 +6,7 @@ function QA({formData, setFormData}) {
     return(
         <>
         <div className="flex flex-col justify-center items-center mt-4">
-         <label > ¿Qué capaz eres de implementar prácticas y tecnologías para la gestión de versiones? </label>
+         <label  > ¿Qué capaz eres de implementar prácticas y tecnologías para la gestión de versiones? </label>
          <img src={RangeSlider1}/>
         <input className="RangeSlider" type="range" id="evaluation" name="evaluation"
          min="0" max="6" value={formData.qa1} onChange={(event) => setFormData({...formData, qa1: event.target.value})}/>

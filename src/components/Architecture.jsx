@@ -4,8 +4,8 @@ import RangeSlider1 from '../assets/RangeSlider1.png'
 function Architecture({formData, setFormData}) {
     return(
         <>
-        <div className="flex flex-col justify-center items-center mt-4">
-        <label> ¿Cómo de capaz eres de implementar arquitecturas web escalables? </label>
+        <div >
+        <label className="flex flex-col justify-center items-center mt-4"> ¿Cómo de capaz eres de implementar arquitecturas web escalables? </label>
         <div className='image'>
          <img src={RangeSlider1}/>
         </div>

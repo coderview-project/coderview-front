@@ -6,7 +6,7 @@ function HomeView() {
         <>
             <div>
                 <div>
-                    <img className="bg-top mt-36 h-72 w-full"
+                    <img className="bg-top mt-0 h-72 w-full"
                         src="src\assets\social-media-shorted.jpg"
                         alt="background-home"></img>
                 </div>

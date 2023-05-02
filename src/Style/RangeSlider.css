@@ -103,22 +103,39 @@ input[type=range] {
     background: #369644;
   }
 
-  @media only screen and (min-width: 1440px) and (max-width: 1460px){
+
+  @media only screen and (min-width: 1501px) and (max-width: 1551px){
     .image{
         
-        padding-left:230px;
-        height: 90px;       
+        padding-left:310px;
+        height: 110px;       
         
     }    
 
     input[type=range]{
-        width: 67vw; 
+        width: 62vw; 
         height: 35px; 
         padding: 10px;
     }
 }
 
-@media only screen and (min-width: 1460px) and (max-width: 1500px){
+
+  @media only screen and (min-width: 1490px) and (max-width: 1500px){
+    .image{
+        
+        padding-left:230px;
+        height: 100px;       
+        
+    }    
+
+    input[type=range]{
+        width: 65vw; 
+        height: 35px; 
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1459px) and (max-width: 1474px){
     .image{
         
         padding-left:260px;
@@ -133,8 +150,37 @@ input[type=range] {
     }
 }
 
+@media only screen and (min-width: 1300px) and (max-width: 1458px){
+    .image{
+        
+        padding-left:260px;
+        height: 100px;       
+        
+    }    
 
-@media only screen and (min-width: 1000px) and (max-width: 1025px){
+    input[type=range]{
+        width: 62vw; 
+        height: 35px; 
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1299px){
+    .image{
+        
+        padding-left:240px;
+        height: 90px;       
+        
+    }    
+
+    input[type=range]{
+        width: 60vw; 
+        height: 35px; 
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1149px){
     .image{
         
         padding-left:200px;
@@ -150,6 +196,22 @@ input[type=range] {
     }
 }
 
+@media only screen and (min-width: 1163px) and (max-width: 1180px){
+    .image{
+        height: 90px;
+        padding-left:245px;
+    }
+
+    input[type=range]{
+        width: 60vw; 
+        height: 35px; 
+        padding: 10px;
+    }
+
+}
+
+
+
 @media only screen and (min-width: 1279px) and (max-width: 1285px){
     .image{
         height: 100px;
@@ -164,7 +226,21 @@ input[type=range] {
 
 }
 
-@media only screen and (min-width: 911px) and (max-width: 950px){
+@media only screen and (min-width: 1210px) and (max-width: 1278px){
+    .image{
+        height: 100px;
+        padding-left:243px;
+    }
+
+    input[type=range]{
+        width: 62vw; 
+        height: 35px; 
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 911px) and (max-width: 999px){
     .image{
         height: 60px;
         padding-left:178px;
@@ -194,7 +270,7 @@ input[type=range] {
 }
 
 
-@media only screen and (min-width: 800px) and (max-width: 810px){
+@media only screen and (min-width: 800px) and (max-width: 811px){
     .image{
         height: 57px;
         padding-left:110px;
@@ -208,20 +284,8 @@ input[type=range] {
     }
 }
 
-@media only screen and (min-width: 811px) and (max-width: 821px){
-    .image{
-        height: 60px;
-        padding-left:157px;
-    }
 
-    input[type=range]{
-        width: 63vw; 
-        height: 30px; 
-        padding: 10px;
-    }
-}
-
-@media only screen and (min-width: 767px) and (max-width: 810px){
+@media only screen and (min-width: 767px) and (max-width: 799px){
     .image{
         height: 60px;
         padding-left:146px;
@@ -239,28 +303,27 @@ input[type=range] {
 @media only screen and (min-width: 700px) and (max-width: 766px){
     .image{
         height: 60px;
-        padding-left:110px;
+        padding-left:140px;
     }
 
     input[type=range]{
-        width: 70vw; 
-        height: 35px; 
-        
+        width: 65vw; 
+        height: 35px;         
         padding: 10px;
     }
 }
 
-@media only screen and (min-width: 559px) and (max-width: 680px){
+@media only screen and (min-width: 559px) and (max-width: 699px){
     .image{
-        height: 57px;
-        padding-left:75px;
+        height: 60px;
+        padding-left:110px;
     }
 
     input[type=range]{
-        width: 72vw; 
+        width: 64vw; 
         height: 30px; 
         
-        padding: 10px;
+        padding: 7px;
     }
 }
 
