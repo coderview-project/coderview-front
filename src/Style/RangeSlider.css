@@ -313,7 +313,7 @@ input[type=range] {
     }
 }
 
-@media only screen and (min-width: 559px) and (max-width: 699px){
+@media only screen and (min-width: 559px) and (max-width: 680px){
     .image{
         height: 60px;
         padding-left:110px;
@@ -332,18 +332,18 @@ input[type=range] {
 @media only screen and (min-width: 681px) and (max-width: 699px){
     .image{
         height: 50px;
-        padding-left:82px;
+        padding-left:136px;
     }
 
     input[type=range]{
-        width: 72vw; 
-        height: 30px; 
+        width: 64vw; 
+        height: 25px; 
         
-        padding: 10px;
+        padding: 8px;
     }
 }
 
-@media only screen and (min-width: 539px) and (max-width: 558px){
+@media only screen and (min-width: 539px) and (max-width: 680px){
     .image{
         height: 47px;
         padding-left:107px;
@@ -357,7 +357,7 @@ input[type=range] {
     }
 }
 
-@media only screen and (min-width: 420px) and (max-width: 529px){
+@media only screen and (min-width: 420px) and (max-width: 538px){
     .image{
         height: 43px;
         padding-left:32px;
