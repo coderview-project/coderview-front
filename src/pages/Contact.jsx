@@ -27,7 +27,7 @@ function Contact() {
     <>
     <Navb/>
     <div className="w-screen h-screen bg-gradient-to-t from-orange ...">
-    <h2 className="font-poppins flex justify-center text-2xl pt-72 m-5  w-full"> Contacta con el equipo de CodeRview</h2>
+    <h2 className="font-poppins flex justify-center text-2xl pt-10 m-5  w-full"> Contacta con el equipo de CodeRview</h2>
       <form className="form flex justify-center flex-col" onSubmit={handleFormSubmit}>
         <label className="flex justify-center">
           <textarea

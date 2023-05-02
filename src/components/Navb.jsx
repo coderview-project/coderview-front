@@ -8,8 +8,8 @@ export default () => {
     // Replace javascript:void(0) paths with your paths
     const navigation = [
         { title: "HOME", path: "/" },
-        { title: "MI PERFIL", path: "/" },
-        { title: "SOBRE CODERVIEW", path: "javascript:void(0)" },
+        { title: "LOGIN", path: "/Login" },
+        { title: "REGISTRO", path: "/Register" },        
         { title: "CONTACTO", path: "/Contact" }
     ]
 

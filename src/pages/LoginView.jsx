@@ -8,7 +8,7 @@ function LoginView() {
     <>
     <Navb/>
     <div className='grid justify-items-stretch'>
-      <div className='w-screen h-36 mt-44'>
+      <div className='w-screen h-36 mt-0'>
         <Login />
       </div>
     </div>

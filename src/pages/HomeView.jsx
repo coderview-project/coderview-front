@@ -23,9 +23,30 @@ function HomeView() {
 
                     <p className="text-center object-fit text-2xl mb-8 pt-5 pb-5 h-auto bg-white font-poppins">¿Cómo funciona?</p>
 
-                    <p className="text-center leading-6 p-8 mx-8 top-full bg-white h-auto rounded-xl font-poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet metus mattis, fermentum nibh at, dignissim odio. Quisque sit amet justo eu lacus tristique consectetur. Nunc convallis diam ipsum, vel dapibus libero condimentum ut. Nunc a elit suscipit neque faucibus eleifend molestie vitae mi. In a quam eget mi varius commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam maximus cursus tincidunt. Integer fringilla nisl sed elit dictum pellentesque. Quisque scelerisque fermentum odio, in pellentesque metus auctor nec. Ut suscipit magna vel ligula elementum, eu sodales metus rhoncus. Fusce non nisl congue, mollis enim commodo, rhoncus elit. Nullam sed metus vitae risus elementum tincidunt.
+                    <p className="text-center leading-6 p-8 mx-8 top-full bg-white h-auto rounded-xl font-poppins">CodeRview tiene un funcionamiento sencillo. El primer paso es registrate en CodeRview y esperar a que tu formador te incluya en la promoción de tu bootcamp correspondiente. Una vez tengas acceso, será el propio formador el que te de paso a tus evaluaciones. Serán un total de cuatro durante el transcurso del curso.
+                <br></br> <br></br>
+                Estás evaluaciones están diseñadas para que califiques un abanico de competencias en habilidades relacionadas con el bootcamp según tu criterio en base a los siguientes niveles:
+                <br></br> <br></br>
+                Nivel 1: Saber investigar.  Saber como realizar una búsqueda efectiva y práctica que arroje respuestas significativas a las preguntas formuladas.
+                <br></br> <br></br>
+                Nivel 2: Saber recordar. Ser capaz de recordar elementos que ya se han visitado vía investigación o a través de la teoría y relacionarlo con el trabajo que se esté realizando.
+                <br></br> <br></br>
+                Nivel 3: Saber comprender. Este nivel hace referencia a ser capaz de tener una comprensión real del código que se está utilizando.
+                <br></br> <br></br>
+                Nivel 4: Saber aplicar. Ser capaz de aplicar de mutu propio los conocimientos adquiridos a través de las prácticas de los niveles anteriores.
+                <br></br> <br></br>
+                Nivel 5: Saber analizar. A través de todo lo aprendido anteriormente, tener la habilidad de poder analizar y desgranar el código.
+                <br></br> <br></br>
+                Nivel 6: Saber crear. Se define a sí misma y corresponde a la habilidad de poder crear codigo y proyectos por uno mismo.
+                <br></br>
+                <br></br>
+                Estos seis niveles están reflejados de forma amena en un slider que utilizaras para elegir tu valoración, siguiendo pregunta a pregunta hasta completar tu evaluación.  CodeRview es una herramienta desarrollada por estudiantes del Bootcamp Full Stack de Factoría F5: Eva Aramburu, Margarita Álvarez, Delia Muñoz, Paola Arce y Diana Romero.
 
-                        Duis felis massa, rhoncus sit amet augue eu, placerat condimentum nisi. Ut quis tortor vitae quam sollicitudin mattis ac ut nulla. Donec finibus imperdiet auctor. Aenean ex leo, accumsan vel nulla vitae, cursus commodo sapien. Morbi non nunc sed lectus ullamcorper pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ullamcorper feugiat ligula nec eleifend. Morbi mattis dolor eget placerat interdum. Integer porta vulputate elit, vel congue velit egestas non. Phasellus lacinia tortor ac augue aliquam, sed consectetur libero mattis.</p>
+
+
+
+
+</p>
                 </div>
             </div>
         </>

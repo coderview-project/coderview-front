@@ -3,15 +3,18 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
-const LoggedNavb =() => {
-    let Links =[
-        {name:"HOME", link:"/"},
-        {name: "MI PERFIL", link:"/LoggedViewTest"},
-        {name:"SOBRE CODERVIEW", link:"/"},
-        {name:"CONTACTO", link:"/Contact"},
-    ];
 
-    let [open,setOpen]=useState(false);
+
+export default  () => {
+
+    const [state, setState] = useState(false)
+
+    // Replace javascript:void(0) paths with your paths
+    const navigation = [
+        { title: "HOME", path: "/" },
+        { title: "MI PERFIL", path: "/LoggedViewTest" },          
+        { title: "CONTACTO", path: "/Contact" }
+    ]
 
     const navigate = useNavigate();
     const handleLogout = () => {
@@ -20,37 +23,67 @@ const LoggedNavb =() => {
     }
 
     return (
-    <div className='shadow-md w-full fixed top-0 left-0 '>
-        <div className="md:flex items-center justity-between bg-white py-6 md:px-10 px-7">
-            <span className="px-10 ">
-            <img
-            src="/CodeF5.png"
-            width="170"
-            height="50"
-            alt="logo CodeRview"
-             />
-            </span>
-        <div onClick={()=>setOpen(!open)}  className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">
-        <svg name={open ? 'close': 'menu'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-            <path strokeLineCap="round" strokeLineJoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        <div/>
-    </div>
-        <ul className={`md:flex md:items-center md: pb-5 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-0':'top[-490px]'}`}>
-            {
-                Links.map((link)=>(
-                    <li key={link.name} className='md:ml-8 text-lg  md:my-0 my-4 '>
-                        <a href={link.link} className=" hover:text-orange-600 duration-500">{link.name}</a>
-                    </li>
-                ))
-            }
-        <button style={{marginLeft: 20}} onClick={handleLogout}>  <LogoutOutlinedIcon/> </button> 
-        </ul>
-        
-        </div>
-    </div>
+        <nav className="bg-white shadow-md border-b w-full md:static md:text-lg md:border-none">
+            <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+                <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <a href="javascript:void(0)">
+                        <img
+                            src="CodeF5.png"
+                            width={120}
+                            height={50}
+                            alt="Logo CodeRView"
+                        />
+                    </a>
+                    <div className="md:hidden">
+                        <button className="text-gray-500 hover:text-gray-800"
+                            onClick={() => setState(!state)}
+                        >
+                            {
+                                state ? (
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                                    </svg>
+                                ) : (
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                    </svg>
+                                )
+                            }
+                        </button>
+                    </div>
+                </div>
+                <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? 'block' : 'hidden'}`}>
+                    <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+                        {
+                            navigation.map((item, idx) => {
+                                return (
+                                    <li key={idx} className="text-gray-700 hover:text-orange-600">
+                                        <a href={item.path} className="block">
+                                            {item.title}
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }
 
+                        <button onClick={handleLogout}>  <LogoutOutlinedIcon/> </button>                         
+                    </ul>
+                     
+                </div>
+                
+            </div>
+            
+            
+        </nav>
     )
 }
 
-export default LoggedNavb
+
+
+
+
+
+
+    
+
+   

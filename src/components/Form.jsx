@@ -90,8 +90,8 @@ function Form() {
           </h2>
         </header>
       </div>
-
-      <div className="flex flex-col h-screen font-poppins  bg-gradient-to-t from-salmon ...   ">
+    
+      <div className="flex flex-col font-poppins     ">
         <div className=" flex flex-row " id="evaluation">
           <div
             className="progress-bar bg-gradient-to-r from-salmon ..."
@@ -116,17 +116,17 @@ function Form() {
             {" "}
           </div>
         </div>
-        <div className=" contenainer flex-root flex-col">
+        <div className=" contenainer  flex-root flex-col h-screen">
             <div> 
-          <div className="flex-col text-xl text-center font-bold p-8 font-poppins">
+          <div className="flex-col text-2xl text-center  font-bold p-8 font-poppins">
             {" "}
             {FormSections[page]}
           </div>
-          <div className="flex-col text-center text-lg  font-medium font-poppins">
+          <div className="flex-col text-center text-xl  font-medium font-poppins">
             {" "}
             {PageDisplay()}
           </div>
-          <div className="flex flex-row justify-center items-center font-poppins space-x-4 m-4 p-4">
+          <div className="flex flex-row justify-center items-center font-poppins space-x-4 m-4 p-4 h-full">
             <button
               className="flex flex-row bg-orange  rounded-full text-white text-xl justify-center items-center font-semibold "
               disabled={page == 0}
@@ -191,7 +191,11 @@ function Form() {
                 />
               </svg>
              
-            </button>
+            </button>   
+            
+
+
+
           </div>
           </div>
         </div>

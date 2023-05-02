@@ -4,6 +4,7 @@ import RangeSlider1 from '../assets/RangeSlider1.png'
 function FunctionalTechnical({formData, setFormData}) {
     return(
         <>
+        
         <label className="flex flex-col justify-center items-center mt-4"> ¿Cómo de capaz eres de conceptualizar de manera funcional un proyecto digital? </label>
         <div className='image'>
          <img src={RangeSlider1}/>
@@ -22,6 +23,7 @@ function FunctionalTechnical({formData, setFormData}) {
         </div>
         <input className="RangeSlider" type="range" id="evaluation" name="evaluation"
          min="0" max="6" value={formData.funcTech3} onChange={(event) => setFormData({...formData, funcTech3: event.target.value})}/>
+        
         </>
     )
 }

@@ -46,8 +46,8 @@ function RegisterInstructorForm() {
 
   return (
     <>
-      <div className='w-screen grid justify-items-center'>
-        <form component="form" id='registerForm' noValidate onSubmit={handleSubmit} sx={{ mt: 3 }} className='bg-salmon py-5 px-5 rounded-xl my-10'>
+      <div className='w-screen h-screen grid justify-items-center'>
+        <form component="form" id='registerForm' noValidate onSubmit={handleSubmit} sx={{ mt: 3 }} className='h-fit bg-salmon py-5 px-5 rounded-xl my-10'>
           <div className='grid grid-rows-5'>
             <div className='flex justify-between mt-3 w-full'>
               <label className='font-poppins font-bold mr-4 text-md'> Nombre: </label>
