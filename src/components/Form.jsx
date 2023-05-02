@@ -26,8 +26,8 @@ function Form() {
         qa2: 0, 
         qa3: 0
     });
-    const [evaluatorId, setEvaluatorId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
-    const [evaluateeId, setEvaluateeId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
+    // const [evaluatorId, setEvaluatorId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
+    // const [evaluateeId, setEvaluateeId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
 
   const FormSections = [
     "Sobre la gestión de proyectos",
