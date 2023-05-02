@@ -24,6 +24,17 @@ export const evaluationService = {
          } else { 
             alert("Algo salió mal...");
          }
+    },
+    async getSelectedEvaluation(id) {
+        let response = await apiClient.get("/EvaluationData/GetSelectedEvaluationData?id=" + id);
+        if (!response == 200) 
+            throw {
+                status: response.status,
+                statusText: "Not found",
+            };
+        let evaluation = await response.data;
+        console.log("Esto viene del service", evaluation)
+        return evaluation;
     }
     
 }

@@ -5,7 +5,7 @@ export const evaluationHandler = {
         if(!newEvaluation) {
             return; 
         }
-        console.log("esto viene de handler", newEvaluation)
+        
         let evaluationData = {
             "projectM": newEvaluation.formData.projectM,
             "funcTech1": newEvaluation.formData.funcTech1,
@@ -24,5 +24,9 @@ export const evaluationHandler = {
             // "evaluationId": 0
         }
         return evaluationService.addEvaluation(evaluationData);
-    }
+    },
+    loadEvaluation(userId) {
+       
+        return evaluationService.getSelectedEvaluation(userId);
+    },
 }

@@ -7,14 +7,12 @@ import { userHandler } from "../handler/userHandler";
 
 function LoggedViewTest() {
     const isLogged = JSON.parse(localStorage.getItem('userData'));
-  //  const userRol = isLogged.item2;
-  //  const userId = isLogged.item3;
+   const userRol = isLogged.item2;
+   const userId = isLogged.item3;
     console.log(userId);
-   
-    const navigate = useNavigate();
 
     const [user, setUser] = useState([]);
-  
+ 
     
     useEffect(() => {
         async function fetchUser() {
@@ -23,6 +21,7 @@ function LoggedViewTest() {
           setUser(userData);
         }
         fetchUser();
+
       }, []);
    
     return (

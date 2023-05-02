@@ -10,23 +10,24 @@ import  '../Style/RangeSlider.css'
 
 
 function Form() {
-  const [page, setPage] = useState(0);
-  const [formData, setFormData] = useState({
-    projectM: 0,
-    funcTech1: 0,
-    funcTech2: 0,
-    funcTech3: 0,
-    front1: 0,
-    front2: 0,
-    back1: 0,
-    back2: 0,
-    archit: 0,
-    qa1: 0,
-    qa2: 0,
-    qa3: 0,
-  });
-  // const [evaluatorId, setEvaluatorId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
-  // const [evaluateeId, setEvaluateeId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
+ 
+    const [page, setPage] = useState(0);
+    const [formData, setFormData] = useState({
+        projectM: 0,
+        funcTech1: 0,
+        funcTech2: 0,
+        funcTech3: 0,
+        front1: 0,
+        front2: 0,
+        back1: 0, 
+        back2: 0,
+        archit: 0,
+        qa1: 0,
+        qa2: 0, 
+        qa3: 0
+    });
+    const [evaluatorId, setEvaluatorId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
+    const [evaluateeId, setEvaluateeId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
 
   const FormSections = [
     "Sobre la gestión de proyectos",
