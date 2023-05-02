@@ -6,6 +6,8 @@ import FrontEnd from "./FrontEnd";
 import BackEnd from "./BackEnd";
 import Architecture from "./Architecture";
 import QA from "./QA";
+import  '../Style/RangeSlider.css'
+
 
 function Form() {
   const [page, setPage] = useState(0);

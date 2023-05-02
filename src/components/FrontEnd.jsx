@@ -1,4 +1,4 @@
-import RangeSlider from '../Style/RangeSlider.css'
+import '../Style/RangeSlider.css'
 import RangeSlider1 from '../assets/RangeSlider1.png'
 
 function FrontEnd({formData, setFormData}) {
@@ -9,13 +9,13 @@ function FrontEnd({formData, setFormData}) {
         <div className='image'>
          <img src={RangeSlider1}/>
         </div>
-        <input className="p-2" type="range" id="evaluation" name="evaluation"
+        <input className="RangeSlider" type="range" id="evaluation" name="evaluation"
          min="0" max="6" value={formData.front1} onChange={(event) => setFormData({...formData, front1: event.target.value})}/>
         <label > ¿Y de crear una UI web dinámica y adaptable? </label>
         <div className='image'>
          <img src={RangeSlider1}/>
         </div>
-        <input className="p-2" type="range" id="evaluation" name="evaluation"
+        <input className="RangeSlider" type="range" id="evaluation" name="evaluation"
          min="0" max="6" value={formData.front2} onChange={(event) => setFormData({...formData, front2: event.target.value})}/>
          </div>       
         </>

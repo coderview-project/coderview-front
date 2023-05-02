@@ -1,4 +1,4 @@
-import RangeSlider from '../Style/RangeSlider.css'
+import  '../Style/RangeSlider.css'
 import RangeSlider1 from '../assets/RangeSlider1.png'
 
 function ProjectManagement({formData, setFormData}) {
