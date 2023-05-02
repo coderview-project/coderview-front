@@ -6,6 +6,7 @@ import './App.css'
 import Range from './components/Range'
 import Form from './components/Form'
 import ProjectManagement from './components/ProjectManagement'
+import EvaluationResultView from './pages/EvaluationResultView'
 
 
 function App() {
@@ -15,9 +16,8 @@ function App() {
     
     <>     
       {/* <Navb/> */}
-      
-
-      <Range />
+      <EvaluationResultView/>
+      {/*<Range />*/}
       {/* <HomeView/> */}
       {/* <Footer/> */}
     </>  
