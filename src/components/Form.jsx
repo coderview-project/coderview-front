@@ -21,7 +21,7 @@ function Form() {
         back2: 0,
         archit: 0,
         qa1: 0,
-        qa2: 0,
+        qa2: 0, 
         qa3: 0
     });
     const [evaluatorId, setEvaluatorId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
@@ -73,7 +73,9 @@ function Form() {
         <button 
          disabled={page == FormSections.length -1}
         onClick={() => {setPage((currPage) => currPage + 1)}}> Next </button>
-        <button  onClick={handleSubmit}> Enviar </button>
+        <button 
+        disabled={page != 5}
+         onClick={handleSubmit}> Enviar </button>
             
         </div>
         </div>

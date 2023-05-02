@@ -12,6 +12,11 @@ function UserView({user}) {
     e.preventDefault();
     navigate("/Evaluation");
   }
+
+  const handleEvaluation = (e) => {
+    e.preventDefault();
+    navigate("/MyEvaluations");
+  }
   return (
     
     <>
@@ -65,7 +70,7 @@ function UserView({user}) {
                   <button className="text-black" onClick={handleNavigate}>CO-EVALUAR</button>
                 </div>
                 <div className="flex m-4 p-4 rounded-2xl bg-orange text-center justify-center w-48">
-                  <button className="text-white">CONSULTAR EVALUACIONES</button>
+                  <button className="text-white" onClick={handleEvaluation}>CONSULTAR EVALUACIONES</button>
                 </div>
               </div>
             </div>

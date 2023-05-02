@@ -90,6 +90,7 @@ import Contact from '../pages/Contact';
 import LoggedViewTest from '../pages/LoggedViewTest';
 import { userHandler } from '../handler/userHandler';
 import Form from '../components/Form';
+import MyEvaluations from '../pages/MyEvaluations';
 
 const Router = () => {
     return (
@@ -104,6 +105,7 @@ const Router = () => {
                 <Route path='/LoggedViewTest' element={<LoggedViewTest/>} loader={fetchUser} />
                 <Route path='/UserDashboard' element={<UserView/>}/>
                 <Route path='/Evaluation' element={<Form/>}/>
+                <Route path='/MyEvaluations' element={<MyEvaluations/>} loader={fetchEvaluation} /> 
             </Routes>
         </BrowserRouter>
     )
@@ -112,6 +114,11 @@ const Router = () => {
 async function fetchUser({ params }) {
     const user = await userHandler.loadUser(params.id);
     return { user };
+}
+
+async function fetchEvaluation({params}) {
+    const evaluation = await evaluationHandler.loadEvaluation(params.id)
+    return {evaluation};
 }
 
 export default Router; 
