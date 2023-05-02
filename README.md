@@ -79,6 +79,6 @@ Run the npm start command to run the React app. It will automatically open the l
 
 ## 🧪Next Steps:
 
-	+ Add a user login.
-	+ Add a shopping cart.
-	+ Add security.
+	+ Add co-evaluation functionality.
+	+ Instructors can add coders and particular evaluable contents to their created bootcamps.
+	+ Instructors can activate and deactivate evaluations.
