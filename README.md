@@ -15,7 +15,7 @@ competencias y las de sus compañeros a lo largo del proceso educativo de un boo
 
 | Figma | Trello |
 | :---: | :---: | 
-|<img src="https://github.com/coderview-project/coderview-front/blob/feature/tests/src/assets/mockupfigma.png" width="50%"> |<img src="https://github.com/Alambiqueproyect/AlambiqueFrontend/blob/f122de8a482b77a10b242e3a726b3ee8b7978da5/src/assets/images/TrelloAlambique.png" width="50%"> | <img src="https://user-images.githubusercontent.com/116561400/221018441-6e3194d5-8f75-4d61-a5a8-5e6c5e992391.png" width="50%"> |
+|<img src="https://github.com/coderview-project/coderview-front/blob/feature/tests/src/assets/mockupfigma.png" width="50%"> |<img src="https://github.com/coderview-project/coderview-front/blob/develop/src/assets/trello.png" width="50%"> | <img src="https://user-images.githubusercontent.com/116561400/221018441-6e3194d5-8f75-4d61-a5a8-5e6c5e992391.png" width="50%"> |
 
 		
 
@@ -73,7 +73,7 @@ Run the npm start command to run the React app. It will automatically open the l
 
 ## 👀 TEST
 	
-![image](https://github.com/Alambiqueproyect/AlambiqueFrontend/blob/feature/merge/src/assets/images/Tests.png)
+![image](https://github.com/coderview-project/coderview-front/blob/develop/src/assets/9tests.png)
 
 
 
