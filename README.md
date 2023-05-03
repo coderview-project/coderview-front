@@ -78,7 +78,8 @@ https://docs.google.com/document/d/1J1AeGwNvrTSIP9QdgTr1BCTbAYrqs6S-Z9cGRVdCjPs/
 
 ## 👀 TEST
 	
-![image](https://github.com/coderview-project/coderview-front/blob/develop/src/assets/9tests.png)
+![image](https://github.com/coderview-project/coderview-front/blob/develop/src/assets/7tests.png)
+![image](https://github.com/coderview-project/coderview-front/blob/develop/src/assets/test-back.png)
 
 
 ## 🧪Next Steps:
