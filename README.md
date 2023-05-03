@@ -64,6 +64,9 @@ competencias y las de sus compañeros a lo largo del proceso educativo de un boo
 ```
 Run the npm start command to run the React app. It will automatically open the localhost ( http://localhost:3000 )
 ```
+4. 
+```
+Install the backend https://docs.google.com/document/d/1J1AeGwNvrTSIP9QdgTr1BCTbAYrqs6S-Z9cGRVdCjPs/edit?usp=sharing
 
 ## 📚Methodology:
 - Methodology Agile with Scrum.
@@ -74,7 +77,6 @@ Run the npm start command to run the React app. It will automatically open the l
 ## 👀 TEST
 	
 ![image](https://github.com/coderview-project/coderview-front/blob/develop/src/assets/9tests.png)
-
 
 
 ## 🧪Next Steps:
