@@ -6,7 +6,6 @@ import '@testing-library/jest-dom';
 test('There is a button', () => {
 
     render (<RegisterForm show={true} />)
-    screen.debug()
     const button = screen.getByText(/Enviar/i);
     expect(button).toBeInTheDocument();
   });

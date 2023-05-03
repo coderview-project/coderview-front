@@ -5,7 +5,6 @@ import '@testing-library/jest-dom';
 
 test('should contain a image element', () => { 
     render(<HomeView />); 
-    screen.debug()
     const ImageElement = screen.getByAltText(/background-home/i); 
     expect(ImageElement).toBeInTheDocument(); 
   });
