@@ -66,7 +66,7 @@ Run the npm start command to run the React app. It will automatically open the l
 ```
 4. 
 ```
-Install the backend following the instructions explained in the document: 
+Installation queries instructions: 
 https://docs.google.com/document/d/1J1AeGwNvrTSIP9QdgTr1BCTbAYrqs6S-Z9cGRVdCjPs/edit?usp=sharing
 ```
 
