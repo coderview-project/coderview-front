@@ -7,6 +7,7 @@ import BackEnd from "./BackEnd";
 import Architecture from "./Architecture";
 import QA from "./QA";
 import  '../Style/RangeSlider.css'
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -27,8 +28,9 @@ function Form() {
         qa2: 0, 
         qa3: 0
     });
-    // const [evaluatorId, setEvaluatorId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
-    // const [evaluateeId, setEvaluateeId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
+    const navigate = useNavigate();
+    const [evaluatorId, setEvaluatorId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
+    const [evaluateeId, setEvaluateeId] = useState(JSON.parse(localStorage.getItem('userData')).item3)
 
   const FormSections = [
     "Sobre la gestión de proyectos",
@@ -65,12 +67,7 @@ function Form() {
     event.preventDefault();
     let newEvaluation = { formData, evaluatorId, evaluateeId };
     evaluationHandler.addEvaluation(newEvaluation);
-    console.log(
-      "Esto viene del componente form",
-      formData,
-      evaluatorId,
-      evaluateeId
-    );
+    navigate("/LoggedViewTest");
     // incluir navigate("/UserDashboard")
   };
 

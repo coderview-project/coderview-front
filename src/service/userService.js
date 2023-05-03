@@ -31,7 +31,7 @@ export const userService = {
         let user = response.data;
         return user;
     },
-    async postUser(newUserRequestModel){
+    async addUser(newUserRequestModel){
         let options = {
             url: 'User/PostUser',
             method: 'post',
@@ -49,7 +49,7 @@ export const userService = {
          }
 
     },
-    async postInstructor(newUserRequestModel) {
+    async addInstructor(newUserRequestModel) {
         let options = {
             url: 'User/PostInstructor',
             method: 'post',

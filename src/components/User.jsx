@@ -1,10 +1,7 @@
-import React from 'react'
-import Footer from '../components/Footer'
-import LoggedNavb from '../components/LoggedNavb'
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
-function UserView({user}) {
+function User({user}) {
   console.log(user);
   const navigate = useNavigate(); 
 
@@ -12,18 +9,13 @@ function UserView({user}) {
     e.preventDefault();
     navigate("/Evaluation");
   }
-
-  const handleEvaluation = (e) => {
-    e.preventDefault();
-    navigate("/MyEvaluations");
-  }
   return (
     <>
-        <LoggedNavb/>
-        <div className="flex bg-orange ">
+      <div className="flex bg-orange mt-60">
         <header className="h-20 w-screen">
           <h2 className="text-3xl text-white text-justify pl-8 mt-4 font-semibold ">
-            Bienvenid@ {user[0]?.userName}
+            {/* {user[0]?.userName} */}
+             Nombre
           </h2>
         </header>
       </div>
@@ -53,7 +45,7 @@ function UserView({user}) {
             </div>
             <div className="m-4  place-content-center">
               <div className="flex flex-wrap justify-center">
-                <div className="flex m-4 p-4 rounded-2xl bg-white text-center justify-center w-48">
+                <div className="flex m-4 p-2 rounded-2xl bg-white text-center justify-center w-48">
                   <button className="text-black text-lg" onClick={handleNavigate}>1º EVALUACIÓN</button>
                 </div>
                 <div className="flex m-4 p-4 text-lg rounded-2xl bg-white text-center justify-center w-48">
@@ -69,17 +61,15 @@ function UserView({user}) {
                   <button className="text-black" onClick={handleNavigate}>CO-EVALUAR</button>
                 </div>
                 <div className="flex m-4 p-4 rounded-2xl bg-orange text-center justify-center w-48">
-                  <button className="text-white" onClick={handleEvaluation}>CONSULTAR EVALUACIONES</button>
+                  <button className="text-white">CONSULTAR EVALUACIONES</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-        <Footer/> 
     </>
-    
-  )
+  );
 }
 
-export default UserView;
+export default User;

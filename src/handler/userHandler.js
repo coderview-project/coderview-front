@@ -13,7 +13,7 @@ export const userHandler = {
             "password": newUser.password,
         }
 
-        return userService.postUser(newUserRequestModel);
+        return userService.addUser(newUserRequestModel);
     },
     async postInstructor(newInstructor) {
         if(!newInstructor) {
@@ -26,7 +26,7 @@ export const userHandler = {
             "email": newInstructor.email,
             "password": newInstructor.password,
         }
-        return userService.postInstructor(newUserRequestModel);
+        return userService.addInstructor(newUserRequestModel);
     },
     async loadUser() {
         var result = await  userService.getUser();

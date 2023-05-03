@@ -13,7 +13,6 @@ function MyEvaluations() {
         async function fetchEvaluation() {
             const userId = JSON.parse(localStorage.getItem('userData')).item3
             let data = await evaluationHandler.loadEvaluation(userId);
-            // console.log("Esto viene del componente" , data);
             setEvaluationData(data);
         }
         fetchEvaluation();
@@ -21,15 +20,17 @@ function MyEvaluations() {
 
     if (evaluationData == undefined || evaluationData == null || evaluationData.length == 0) {
         return (
-            <p>No hay info aún</p>
+            <p> No hemos encontrado ninguna evaluación. ¡Empieza a autoevaluarte! </p>
         )
     } else {
         return (
             <>
-                {evaluationData.map(evaluation => {
+            <h1> MIS AUTOEVALUACIONES </h1> 
+                {evaluationData.map((evaluation, index) => {
                     return(
-                    <>
-                        <h1> MIS AUTOEVALUACIONES:  </h1>
+                        <>
+                        <h1>  AUTOEVALUACIÓN {index + 1} </h1>
+                   
                         <h1> {evaluation.projectM}</h1>
                         <h1> {evaluation.funcTech1}</h1>
                         <h1> {evaluation.funcTech2}</h1> 
@@ -42,10 +43,8 @@ function MyEvaluations() {
                         <h1> {evaluation.qa1}</h1> 
                         <h1> {evaluation.qa2}</h1> 
                         <h1> {evaluation.qa3}</h1> 
-                    </>
-                )})}
-                
-
+                        </>
+                    )})}
             </>
         )
     }

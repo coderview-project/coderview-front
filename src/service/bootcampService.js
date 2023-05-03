@@ -20,7 +20,7 @@ export const bootcampService = {
        
         return allUser;
     },
-    async postBootcamp(bootcamp) {
+    async addBootcamp(bootcamp) {
         // let options = {
         //     headers: {
         //         'Authorization': "asdasdasd"

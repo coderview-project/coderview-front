@@ -76,7 +76,7 @@ function RegisterForm() {
           <div className="flex justify-center">
             <div>
               <p className='my-2'>
-                ¿Ya tienes una cuenta? <a href="#" className='text-orange font-poppins hover:text-white'> Inicia sesión </a>
+                ¿Ya tienes una cuenta? <a href="/Login" className='text-orange font-poppins hover:text-white'> Inicia sesión </a>
               </p>
             </div>
           </div>
