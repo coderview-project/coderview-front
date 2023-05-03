@@ -103,6 +103,11 @@ input[type=range] {
     background: #369644;
   }
 
+  #WateringCan{
+    height: 100px;
+    width: 120px;
+  }
+
 
   @media only screen and (min-width: 1501px) and (max-width: 1551px){
     .image{
