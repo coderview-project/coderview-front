@@ -76,7 +76,7 @@ function MyEvaluations() {
                         )})}
                     
             </div>
-            <Footer/>
+            
             </>
         )
     }
