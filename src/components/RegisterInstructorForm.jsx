@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { userHandler } from '../handler/userHandler';
-import RegisterForm from './RegisterFrom';
+import RegisterForm from './RegisterForm';
 
 
 function RegisterInstructorForm() {
