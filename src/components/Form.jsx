@@ -76,7 +76,7 @@ function Form() {
       <div className="flex flex-row justify-center font-poppins">
         <header className="flex flex-col  h-40 bg-white justify-center items-center">
           <img
-            src="src\components\assets\CodeRview negro.png"
+            src="src\assets\CodeRview negro.png"
             alt="logo"
             className="h-20"
           />

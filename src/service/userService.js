@@ -40,7 +40,7 @@ export const userService = {
                 // 'Authorization': 
             }
         }
-        let response = await apiClient.post("/User/PostUser", newUserRequestModel, options);
+        let response = await apiClient.post("/User/AddUser", newUserRequestModel, options);
         if (response.status === 200) 
          {   
             alert("Usuario registrado con éxito");  

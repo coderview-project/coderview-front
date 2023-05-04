@@ -30,7 +30,7 @@ function UserView({user}) {
       <div className="flex flex-wrap justify-around">
         <div className="flex flex-col mt-8 md:w-96 justify-center items-center">
           <img
-            src="src\components\assets\admin-photo (1).png"
+            src="src\assets\admin-photo.png"
             alt="photo-user"
             className="h-80 w-full p-6"
           />
@@ -40,7 +40,7 @@ function UserView({user}) {
           >
             <img
               className="py-2 mx-2"
-              src="src\components\assets\icon _pencil_.png"
+              src="src\assets\icon _pencil_.png"
               alt="edit-profile"
             />
             Editar perfil usuario

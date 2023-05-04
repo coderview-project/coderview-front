@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import AdminView from "./AdminView";
 import UserView from "./UserView";
 import { userHandler } from "../handler/userHandler";
+import RegisterInstructor from "./RegisterInstructor";
 
 
 function LoggedViewTest() {
@@ -31,7 +32,7 @@ function LoggedViewTest() {
                 {isLogged  && userRol === 3 ? 
                   <UserView user={user}/>
                 : isLogged && userRol === 2 ?  <AdminView user={user}/> 
-                : isLogged && userRol === 1? <h1> Vista administrador </h1> 
+                : isLogged && userRol === 1? <RegisterInstructor/>  
                 : <h1> Por favor, inicie sesión </h1>
                 }
         </>

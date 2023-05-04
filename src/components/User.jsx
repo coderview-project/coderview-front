@@ -14,7 +14,7 @@ function User({user}) {
       <div className="flex bg-orange mt-60">
         <header className="h-20 w-screen">
           <h2 className="text-3xl text-white text-justify pl-8 mt-4 font-semibold ">
-            {/* {user[0]?.userName} */}
+      
              Nombre
           </h2>
         </header>

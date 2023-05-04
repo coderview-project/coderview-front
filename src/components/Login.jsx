@@ -55,7 +55,7 @@ function Login() {
       <div className="flex flex-col sm:flex-row justify-center items-center bg-gradient-to-t from-orange ... ">
         <div className="flex flex-col justify-center items-center sm: w-1/2">
           <img
-            src="src/components/assets/CodeRview negro.png"
+            src="src\assets\CodeRview negro.png"
             alt="Logo"
             className="h-40 w-40 p-2 justify-center"
           />
