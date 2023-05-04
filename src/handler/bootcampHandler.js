@@ -13,7 +13,7 @@ export const bootcampHandler = {
             "endDate": newBootcamp.endDate
         }
 
-        return bootcampService.AddBootcamp(bootcamp);
+        return bootcampService.addBootcamp(bootcamp);
     },
     loadBootcamps() {
         return bootcampService.getBootcamp();

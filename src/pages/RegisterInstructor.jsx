@@ -1,12 +1,12 @@
 import Navb from '../components/Navb';
 import Footer from '../components/Footer';
 import RegisterInstructorForm from '../components/RegisterInstructorForm';
-import LoggedNavb from '../components/LoggedNavb'
+
 
 function RegisterInstructor() {
     return(
         <>
-       <LoggedNavb />
+        <Navb/>
         <div className='grid justify-items-stretch'> 
             <div className='w-screen h-36'>
                 <img className='w-screen h-40 object-cover' src='src\assets\register_header.jpg'/> 

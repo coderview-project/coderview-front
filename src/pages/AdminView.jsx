@@ -5,6 +5,7 @@ import "../Style/adminview.css";
 import RegisterModal from '../components/RegisterModal';
 
 
+
 function AdminView({user}) {
     console.log(user)
     const [showModal, setShowModal] = useState (false);

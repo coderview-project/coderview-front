@@ -37,7 +37,7 @@ function MyEvaluations() {
                         return (
                             <>
                                 <h1 className="flex flex-col mt-4 items-center justify-center font-bold text-2xl">  AUTOEVALUACIÓN {index + 1} </h1>
-                                <div className="flex flex-col mt-4 pl-20 mb-5 text-lg border-black border-2 border-solid rounded-xl w-3/4 justify-center">
+                                <div className="flex flex-col mt-4 pl-20 mb-5 text-lg border-black border-2 border-solid rounded-xl w-3/4 justify-center bg-white">
                                     
                                     <p>¿Cómo de capaz eres de planificar y gestionar un proyecto digital a través de marcos de trabajo?</p>
                                     <div className="flex items-baseline"> 

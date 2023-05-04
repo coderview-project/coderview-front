@@ -27,8 +27,6 @@ function LoggedViewTest() {
    
     return (
         <>
-            {/* <button className="w-24 p-3 bg-orange" onClick={handleLogout}> LOG OUT </button> */}
-            <div className="mt-20"> </div>
                 {isLogged  && userRol === 3 ? 
                   <UserView user={user}/>
                 : isLogged && userRol === 2 ?  <AdminView user={user}/> 
