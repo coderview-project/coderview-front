@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 
 function UserView({user}) {
-  console.log(user);
   const navigate = useNavigate(); 
 
   const handleNavigate = (e) => {

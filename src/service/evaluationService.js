@@ -13,7 +13,6 @@ const apiClient = axios.create({
 
 export const evaluationService = {
     async addEvaluation(data) {
-        console.log("esto viene del service", data)
         let response = await apiClient.post("/EvaluationData/SubmitEvaluation", data);
 
         if (response.status === 200) 
@@ -32,7 +31,6 @@ export const evaluationService = {
                 statusText: "Not found",
             };
         let evaluation = await response.data;
-        console.log("Esto viene del service", evaluation)
         return evaluation;
     }
     

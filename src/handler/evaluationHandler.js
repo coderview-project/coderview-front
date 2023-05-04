@@ -21,7 +21,7 @@ export const evaluationHandler = {
             "qa3": newEvaluation.formData.qa3,
             "evaluatorId": newEvaluation.evaluatorId,
             "evaluateeId": newEvaluation.evaluateeId,
-            // "evaluationId": 0
+            
         }
         return evaluationService.addEvaluation(evaluationData);
     },

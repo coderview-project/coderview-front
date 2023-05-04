@@ -2,15 +2,6 @@ import React, { useState } from "react";
 import { bootcampHandler } from "../handler/bootcampHandler";
 
 export default function RegisterModal({showModal, handleClose}) {
-  console.log (showModal)
-    //const [showModal, setShowModal] = useState(false);
-  // const [bootcamp, setBootcamp] = useState({
-  //   title: "",
-  //   creatorId: null,
-  //   startDate: "",
-  //   endDate: ""
-  //   // coders: []
-  // });
 
   const [title, setTitle] = useState('');
   const [creatorId, setCreatorId] = useState(null);
@@ -34,30 +25,13 @@ export default function RegisterModal({showModal, handleClose}) {
     setEndDate(endDateInput);
   }
 
-  // const handleChange = (e) => {
-  //   const { , value } = e.target;
-  //   setBootcamp({ ...bootcamp, [bName]: value });
-  // };
-
-  // const handleAgregarCoder = () => {
-  //   if (bootcamp.codigo) {
-  //     setBootcamp({ ...bootcamp, coders: [...bootcamp.coders, bootcamp.codigo] });
-  //     setBootcamp({ ...bootcamp, codigo: "" });
-  //   }
-  // };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     let newBootcamp = { title, creatorId, startDate, endDate };
     console.log("Datos del formulario:", newBootcamp);
     bootcampHandler.postBootcamp(newBootcamp);
-    // resetForm();
     
   };
-
-  // const resetForm = () => {
-  //   document.getElementById('registerForm').reset();
-  // }
 
   return (
     <>
@@ -109,37 +83,6 @@ export default function RegisterModal({showModal, handleClose}) {
                     onChange={handleEndDateChange}
                     className="w-full border-grey rounded-md px-4 py-2 mb-4"
                   />
-                  {/* <label htmlFor="codigo" className="block mb-2">
-                    Coders
-                  </label>
-                  <input
-                    type="text"
-                    id="codigo"
-                    name="codigo"
-                    value={bootcamp.codigo}
-                    onChange={handleChange}
-                    className="w-full border-grey rounded-md px-4 py-2 mb-4"
-                  /> */}
-                  {/* <div className="flex justify-end mb-4">
-                  <button
-                      className="bg-grey text-white active:bg- font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-2"
-                      type="button"
-                      onClick={handleAgregarCoder}
-                    >
-                      Agregar Coder
-                    </button>
-                  </div>
-                  {bootcamp.coders.length > 0 && (
-                    <div className="mb-4">
-                      <h3 className="text-lg font-semibold mb-2">Coders Agregados:</h3>
-                      <ul className="list-disc list-inside">
-                        {bootcamp.coders.map((coder, index) => (
-                          <li key={index}>{coder}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )} */}
-                 
                   <div className="flex justify-end">
                     <button
                       className="bg-grey text-white active:bg-orange font-bold text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-2"

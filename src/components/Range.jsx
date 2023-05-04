@@ -14,7 +14,6 @@ function Range(){
         let sliderThumb = sliderElement.querySelector('.slider-thumb');
         let progressElement = sliderElement.querySelector(".progress");
         const value = (slider.value/slider.max) * 100;
-        console.log(value);
         progressElement.style.width = value;
         sliderThumb.style.cssText = `left: ${value}%; transform:translate(-${value}%, -50%);`
         setSliderValue(Math.round((value / 100) * 6));             

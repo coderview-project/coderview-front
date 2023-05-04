@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function User({user}) {
-  console.log(user);
   const navigate = useNavigate(); 
 
   const handleNavigate = (e) => {

@@ -10,7 +10,6 @@ function LoggedViewTest() {
     const isLogged = JSON.parse(localStorage.getItem('userData'));
    const userRol = isLogged.item2;
    const userId = isLogged.item3;
-    console.log(userId);
 
     const [user, setUser] = useState([]);
  
@@ -18,7 +17,6 @@ function LoggedViewTest() {
     useEffect(() => {
         async function fetchUser() {
           const userData = await userHandler.loadUser(userId);
-          console.log(userData)
           setUser(userData);
         }
         fetchUser();

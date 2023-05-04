@@ -15,7 +15,4 @@ export const bootcampHandler = {
 
         return bootcampService.addBootcamp(bootcamp);
     },
-    loadBootcamps() {
-        return bootcampService.getBootcamp();
-    },
 }

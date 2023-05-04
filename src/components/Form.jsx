@@ -42,17 +42,17 @@ function Form() {
   ];
   const PageDisplay = () => {
     if (page === 0) {
-      console.log(formData);
+
       return (
         <ProjectManagement formData={formData} setFormData={setFormData} />
       );
     } else if (page === 1) {
-      console.log(formData);
+      
       return (
         <FunctionalTechnical formData={formData} setFormData={setFormData} />
       );
     } else if (page === 2) {
-      console.log(formData);
+      
       return <FrontEnd formData={formData} setFormData={setFormData} />;
     } else if (page === 3) {
       return <BackEnd formData={formData} setFormData={setFormData} />;
@@ -68,7 +68,6 @@ function Form() {
     let newEvaluation = { formData, evaluatorId, evaluateeId };
     evaluationHandler.addEvaluation(newEvaluation);
     navigate("/LoggedViewTest");
-    // incluir navigate("/UserDashboard")
   };
 
   return (

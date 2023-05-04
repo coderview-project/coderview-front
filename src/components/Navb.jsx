@@ -4,8 +4,6 @@ import { useState } from 'react'
 export default () => {
 
     const [state, setState] = useState(false)
-
-    // Replace javascript:void(0) paths with your paths
     const navigation = [
         { title: "HOME", path: "/" },
         { title: "LOGIN", path: "/Login" },

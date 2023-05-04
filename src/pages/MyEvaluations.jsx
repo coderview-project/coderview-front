@@ -10,8 +10,6 @@ function MyEvaluations() {
 
     const [evaluationData, setEvaluationData] = useState([]);
 
-    console.log("Esto viene del componente", evaluationData)
-
     useEffect(() => {
         async function fetchEvaluation() {
             const userId = JSON.parse(localStorage.getItem('userData')).item3
