@@ -58,7 +58,7 @@ export const userService = {
                 // 'Authorization': 
             }
         }
-        let response = await apiClient.post("/User/PostInstructor", newUserRequestModel, options);
+        let response = await apiClient.post("/User/AddInstructor", newUserRequestModel, options);
         if (response.status === 200) 
          {   
             alert("Formador registrado con éxito");  

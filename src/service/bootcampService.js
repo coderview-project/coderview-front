@@ -36,7 +36,7 @@ export const bootcampService = {
         //     "endDate": "2023-04-27T09:58:56.760Z",
         //     "isActive": true
         // }
-        let response = await apiClient.post("/Bootcamp/PostBootcamp", bootcamp);
+        let response = await apiClient.post("/Bootcamp/AddBootcamp", bootcamp);
 
         if (response.status === 200) 
          {   
