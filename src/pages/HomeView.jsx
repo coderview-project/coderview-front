@@ -23,7 +23,8 @@ function HomeView() {
 
                     <p className="text-center object-fit text-2xl mb-8 pt-5 pb-5 h-auto bg-white font-poppins">¿Cómo funciona?</p>
 
-                    <p className="text-center leading-6 p-8 mx-8 top-full bg-white h-auto rounded-xl font-poppins">CodeRview tiene un funcionamiento sencillo. El primer paso es registrate en CodeRview y esperar a que tu formador te incluya en la promoción de tu bootcamp correspondiente. Una vez tengas acceso, será el propio formador el que te de paso a tus evaluaciones. Serán un total de cuatro durante el transcurso del curso.
+                    <p className="text-center leading-6 p-8 mx-8 top-full bg-white h-auto rounded-xl font-poppins">CodeRview tiene un funcionamiento sencillo. Si eres formador, el administrador gestionará tus datos y te registrará en la aplicación. Una vez inicies sesión podrás crear tus bootcamps o formaciones. Si eres coder, regístrate en la aplicación y ¡empieza a autoevaluarte! Podrás consultar los resultados de tus autoevaluaciones más adelante desde tu perfil. 
+                    
                 <br></br> <br></br>
                 Estás evaluaciones están diseñadas para que califiques un abanico de competencias en habilidades relacionadas con el bootcamp según tu criterio en base a los siguientes niveles:
                 <br></br> <br></br>
